@@ -1,0 +1,11 @@
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    .nav-right {
+        display: flex;
+        .nav-right-actions ul {
+            display: flex;
+        }
+    }
+}
