@@ -1,34 +1,30 @@
 .hero {
-  background: url("../img/background-foxtar.jpg") no-repeat;
+    .hero {
+      background: url("../img/background-foxtar.jpg") no-repeat;
+      padding: 60px 0 157px 0;
+    }
+    .main-title {
+      font-family: "Roboto";
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      color:#ffffff;
+    }
+    .hero-descript{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size:20px;
+    text-align: center;
+    color:#ffffff;
+    padding: 44px 0;
 }
-.main-title {
-  font-family: "Roboto";
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  color:#ffffff;
+    .search {
+    font-family: Roboto;
+    font-size: 14px;
+      border: transparent;
+      color: #99abb4;
+    }
 
-}
-.hero-descript{
-  font-family: "Roboto";
-  font-weight: normal;
-  font-size:20px;
-  text-align: center;
-  color:#ffffff;
-  padding: 44px 0;
-}
-.search {
-  font-family: Roboto;
-  font-size: 14px;
-  border: transparent;
-
-  color: #99abb4;
-
-}
-/*.search::after{*/
-/*    content: '';*/
-/*    background: url("../img/icon-hero.png")no-repeat;*/
-.searchButton {
   position: absolute;
   background: url("../img/icon-hero.png")no-repeat;
   border: transparent;
@@ -38,8 +34,8 @@
   right: 25px;
 }
 
-.hero {
-  padding: 60px 0 157px 0;
+
+
 }
 .simplSearch {
   position: relative;
