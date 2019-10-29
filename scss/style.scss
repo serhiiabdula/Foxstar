@@ -1,2 +1,10 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import "_dev-olya";
+@import 'reset';
+@import 'typography';
+@import 'variables';
+@import 'button';
+@import 'dev-olya';
+.container {
+    max-width: 1170px;
+}
+
