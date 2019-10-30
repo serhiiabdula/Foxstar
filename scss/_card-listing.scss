@@ -1,0 +1,116 @@
+
+.card {
+  position: relative;
+  &:before {
+    content: "";
+    background:url("../img/card-label.jpg") no-repeat;
+    position: absolute;
+    top: 0;
+    left:0;
+
+  }
+  .card-title {
+    font-family: Roboto;
+  }
+  .data {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .card-inf{
+    padding: 30px 30px 0 30px;
+  }
+  .bottompart {
+    display: flex;
+    border-top: 2px #6c757d solid;
+
+    justify-content: space-between;
+    padding: 30px 30px 0 30px;
+
+  }
+
+
+    .author {
+      display: flex;
+      .card-author {
+        width: 30px;
+        height: 30px;
+      }
+      .author-descript {
+        padding-left: 15px;
+      }
+
+    }
+
+    .rating {
+      display: flex;
+      .rating-discrip {
+        padding-left: 15px;
+      }
+
+      .stars {
+        position: relative;
+        display: block;
+        float: left;
+        height: 20px;
+        width: 105px;
+        background-image: url("../img/stars.png");
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        margin-right: 5px;
+
+        .on {
+
+          height: 20px;
+          background-image: url("../img/stars.png");
+          background-position: 0 -20px;
+        }
+
+        .live {
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+
+          &:hover {
+
+            opacity: 1;
+          }
+
+          span {
+
+            display: block;
+            float: left;
+            cursor: pointer;
+            width: 21px;
+            height: 20px;
+            background-image: url("../img/stars.png");
+            background-repeat: no-repeat;
+            background-position: 0 -20px;
+
+            &:hover {
+              ~ span {
+                background-position: 0 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  .card-descpipt {
+    color:green;
+
+  }
+  .img-listing {
+    width: 100%;
+  }
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+}
