@@ -4,7 +4,7 @@
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
 .row {
     display: flex;
@@ -17,65 +17,60 @@ $md: 720px;
 $lg: 960px;
 $xl: 1170px;
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .container {
         max-width: $sm;
     }
 }
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) {
     .container {
-        max-width: $sm; 
+        max-width: $sm;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: 2.2rem;
     }
     h2 {
-        @extend h1;
         font-size: 1.4rem;
     }
     h3 {
-        @extend h2;
         font-size: 1.0rem;
     }
     h4 {
-        @extend h3;
         font-size: 1.0rem;
     }
     h5 {
-        @extend h4;
         font-size: 0.9rem;
     }
     h6 {
-        @extend h5;
         font-size: 0.7rem;
     }
     .col-sm {
-        max-width: 100%; 
+        max-width: 100%;
     }
     .col-sm-3 {
         flex: 0 0 25%;
-        max-width: 25%; 
+        max-width: 25%;
     }
     .col-sm-4 {
         flex: 0 0 33.33333%;
-        max-width: 33.33333%; 
+        max-width: 33.33333%;
     }
-    .col-sm-6 { 
+    .col-sm-6 {
         flex: 0 0 50%;
-        max-width: 50%; 
+        max-width: 50%;
     }
     .col-sm-9 {
         flex: 0 0 75%;
-        max-width: 75%; 
+        max-width: 75%;
     }
     .col-sm-12 {
         flex: 0 0 100%;
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
     .container {
         max-width: $md;
     }
@@ -83,104 +78,99 @@ $xl: 1170px;
         font-size: 2.2rem;
     }
     h2 {
-        @extend h1;
         font-size: 1.4rem;
     }
     h3 {
-        @extend h2;
         font-size: 1.0rem;
     }
     h4 {
-        @extend h3;
         font-size: 1.0rem;
     }
     h5 {
-        @extend h4;
         font-size: 0.9rem;
     }
     h6 {
-        @extend h5;
         font-size: 0.7rem;
     }
     .col-md {
-        max-width: 100%; 
+        max-width: 100%;
     }
     .col-md-3 {
         flex: 0 0 25%;
-        max-width: 25%; 
+        max-width: 25%;
     }
     .col-md-4 {
         flex: 0 0 33.33333%;
-        max-width: 33.33333%; 
+        max-width: 33.33333%;
     }
     .col-md-6 {
         flex: 0 0 50%;
-        max-width: 50%; 
+        max-width: 50%;
     }
     .col-md-9 {
         flex: 0 0 75%;
-        max-width: 75%; 
+        max-width: 75%;
     }
     .col-md-12 {
         flex: 0 0 100%;
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .container {
         max-width: $lg;
     }
     .col-lg {
-        max-width: 100%; 
+        max-width: 100%;
     }
     .col-lg-3 {
         flex: 0 0 25%;
-        max-width: 25%; 
+        max-width: 25%;
     }
-    .col-lg-4 { 
+    .col-lg-4 {
         flex: 0 0 33.33333%;
-        max-width: 33.33333%; 
-    }    
+        max-width: 33.33333%;
+    }
     .col-lg-6 {
         flex: 0 0 50%;
-        max-width: 50%; 
+        max-width: 50%;
     }
     .col-lg-9 {
         flex: 0 0 75%;
-        max-width: 75%; 
+        max-width: 75%;
     }
     .col-lg-12 {
         flex: 0 0 100%;
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .container {
         max-width: $xl;
     }
     .col-xl {
-        max-width: 100%; 
+        max-width: 100%;
     }
     .col-xl-3 {
         flex: 0 0 25%;
-        max-width: 25%; 
+        max-width: 25%;
     }
     .col-xl-4 {
         flex: 0 0 33.33333%;
-        max-width: 33.33333%; 
+        max-width: 33.33333%;
     }
     .col-xl-6 {
         flex: 0 0 50%;
-        max-width: 50%; 
+        max-width: 50%;
     }
     .col-xl-9 {
         flex: 0 0 75%;
-        max-width: 75%; 
+        max-width: 75%;
     }
     .col-xl-12 {
         flex: 0 0 100%;
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
