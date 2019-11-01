@@ -41,3 +41,24 @@
 .carousel-control-next-icon {
   background-image: none;
 }
+.carousel-indicators{
+  transform: translateY(70px);
+  li {
+    width: 15px;
+    height: 15px;
+
+    border-radius:10px;
+    border-top: none;
+    border-bottom: none;
+    background-color: #e8e8e8;
+    border: 1px solid #acacac;
+  }
+  &:active {
+    background-color: $color-brand-primary;
+
+    border: 1px solid transparent;
+
+
+  }
+
+}

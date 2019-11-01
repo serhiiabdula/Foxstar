@@ -34,7 +34,7 @@ $('.filter-button-group').on( 'click', 'button', function() {
 * isotope init end
 */
 $('#recipeCarousel').carousel({
-    interval: 10000
+    interval: 10000, dots: true
 })
 
 $('.carousel .carousel-item').each(function(){
