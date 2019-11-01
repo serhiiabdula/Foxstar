@@ -8643,7 +8643,12 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
 .header-top {
+  padding: 27px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8658,8 +8663,28 @@ a.text-dark:hover, a.text-dark:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .header-top .nav-right .nav-right-actions ul {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
+    .header-top .nav-right .nav-right-call {
+      line-height: 38px; }
+
+.nav-right-actions ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.header-bottom {
+  background-color: #263238; }
+  .header-bottom ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0 0 0 -20px; }
+    .header-bottom ul li {
+      padding: 25px 20px; }
+      .header-bottom ul li a {
+        text-decoration: none;
+        color: #fff; }
