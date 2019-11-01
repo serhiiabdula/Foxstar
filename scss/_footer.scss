@@ -8,7 +8,7 @@ hr {
     border: none;
     margin: 0;
 }
-.title-footer {
+.wrapper-footer-top {
     padding: 90px 0 42px 0;
 }
 .title-footer:before {
@@ -16,9 +16,13 @@ hr {
     background-color: $color-brand-primary;
     height: 3px;
     width: 51px;
-    position: absolute;
-    top: 160px;
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    transform: translate(15px, 53px);
 }
+
+
 .contact {
     padding: 60px 0 100px 0;
 }
