@@ -1,6 +1,9 @@
 .hero {
-  padding: 60px 0 157px 0;
+  padding: 150px 0 160px 0;
   background: url("../img/background-foxtar.jpg") no-repeat;
+
+
+
 
   .main-title {
     font-family: "Roboto";
@@ -24,6 +27,7 @@
     font-size: 14px;
     border: transparent;
     color: #99abb4;
+    padding-right: 424px;
   }
 
   .searchButton {
@@ -34,17 +38,20 @@
     height: 25px;
     top: 20px;
     right: 25px;
+
+
   }
 
   .hero-search {
     position: relative;
-    transform: translate(93%);
+    transform: translate(103%);
     background-color: #ffffff;
     border-radius: 3px;
     border: transparent;
     display: inline-block;
     padding: 23px 26px;
-    width: 670px;
+
     box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
   }
+
 }
