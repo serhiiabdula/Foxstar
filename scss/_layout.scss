@@ -11,6 +11,17 @@
     flex-wrap: wrap;
     margin: 0 -15px;
 }
+.section {
+    background-color: $color-background-default;
+}
+.section-inverse {
+    background-color: $color-background-primary;
+    padding: 120px 0;
+    h2 {
+        color: $color-background-default;
+        text-align: center;
+    }
+}
 // container sizes:
 $sm: 540px;
 $md: 720px;
@@ -20,6 +31,9 @@ $xl: 1170px;
 @media (max-width: 575.98px) { 
     .title-footer:before {
         top: 130px;
+    }
+    .card-text p {
+        padding-bottom: 30px;
     }
 }
 // Small devices (landscape phones, 576px and up)
@@ -67,6 +81,12 @@ $xl: 1170px;
     .col-sm-12 {
         flex: 0 0 100%;
         max-width: 100%; 
+    }
+    .section-inverse {
+        padding: 60px 0;
+    }
+    .card-text p {
+        padding-bottom: 30px;
     }
 }
 // Medium devices (tablets, 768px and up)

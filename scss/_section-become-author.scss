@@ -1,0 +1,32 @@
+.section-secondary {
+    background-color: $color-background-secondary;
+    padding: 130px 0 137px 0;
+}
+.external-container {
+    background-color: #b5b5b5;
+    padding: 130px 33px 137px 33px;
+    box-shadow: 1px 1px 30px #b5b5b5;
+}
+.wrapper-inner-container {
+    padding: 115px 226px 107px 226px;
+}
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-brand-primary;
+    text-align: center;
+    padding: 71px 59px 82px 59px;
+    margin: 0 auto;
+}
+.text-inner-container {
+    width: 50%;
+    font-size: 2rem;
+    color: $color-background-default;
+    text-align: left;
+    span {
+        font-weight: 700;
+    }
+}
+.button-inner-container {
+    vertical-align: middle;
+}
