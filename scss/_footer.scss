@@ -8,22 +8,40 @@ hr {
     border: none;
     margin: 0;
 }
+.wrapper-footer-top {
+    padding: 105px 0 42px 0;
+}
 .title-footer {
-    padding: 90px 0 42px 0;
+    padding-bottom: 40px;
 }
 .title-footer:before {
     content: '';
     background-color: $color-brand-primary;
     height: 3px;
     width: 51px;
-    position: absolute;
-    top: 160px;
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    transform: translate(15px, 65px);
 }
 .contact {
-    padding: 60px 0 100px 0;
+    padding: 40px 0 0px 0;
 }
 .contact-info span {
     margin-left: 14px;
+    font-size: 0.933rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: $color-background-default;
+}
+.contact-list li:not(:last-child) {
+    padding-bottom: 15px;
+}
+.footer-list li:not(:last-child) {
+    padding-bottom: 10px;
+}
+ol, ul, dl {
+    margin-bottom: 0rem; 
 }
 .fa-map-marker-alt:before {
     content: "\f3c5";
@@ -37,6 +55,7 @@ hr {
     content: "\f105";
     color: $color-brand-primary; 
     font-weight: 900;
+    padding-right: 10px;
 }
 .fa-location-arrow:before {
     content: "\f124";

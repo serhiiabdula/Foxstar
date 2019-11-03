@@ -8746,6 +8746,7 @@ h1 {
 h2 {
   font-size: 2.4rem;
   line-height: 2.66rem;
+  text-align: center;
   color: #263238; }
 
 h3 {
@@ -8755,11 +8756,9 @@ h3 {
 
 h4 {
   font-size: 1.6rem;
-  line-height: 4rem;
+  line-height: 1;
   font-weight: 500;
   color: #fff; }
-  h4:hover {
-    color: #8bc34a; }
 
 h5 {
   font-family: 'Raleway', sans-serif;
@@ -8995,11 +8994,25 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: 0 -15px; }
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.section {
+  background-color: #fff;
+  padding: 120px 0; }
+
+.section-inverse {
+  background-color: #263238;
+  padding: 120px 0; }
+  .section-inverse h2 {
+    color: #fff;
+    text-align: center; }
 
 @media (max-width: 575.98px) {
   .title-footer:before {
-    top: 130px; } }
+    top: 130px; }
+  .card-text p {
+    padding-bottom: 30px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
@@ -9047,7 +9060,11 @@ img {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .section-inverse {
+    padding: 60px 0; }
+  .card-text p {
+    padding-bottom: 30px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container {
@@ -9504,8 +9521,11 @@ hr {
   border: none;
   margin: 0; }
 
+.wrapper-footer-top {
+  padding: 105px 0 42px 0; }
+
 .title-footer {
-  padding: 90px 0 42px 0; }
+  padding-bottom: 40px; }
 
 .title-footer:before {
   content: '';
@@ -9513,13 +9533,32 @@ hr {
   height: 3px;
   width: 51px;
   position: absolute;
-  top: 160px; }
+  top: 0px;
+  left: 0px;
+  -webkit-transform: translate(15px, 65px);
+      -ms-transform: translate(15px, 65px);
+          transform: translate(15px, 65px); }
 
 .contact {
-  padding: 60px 0 100px 0; }
+  padding: 40px 0 0px 0; }
 
 .contact-info span {
-  margin-left: 14px; }
+  margin-left: 14px;
+  font-size: 0.933rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  color: #fff; }
+
+.contact-list li:not(:last-child) {
+  padding-bottom: 15px; }
+
+.footer-list li:not(:last-child) {
+  padding-bottom: 10px; }
+
+ol,
+ul,
+dl {
+  margin-bottom: 0rem; }
 
 .fa-map-marker-alt:before {
   content: "\f3c5";
@@ -9532,7 +9571,8 @@ hr {
 .fa-angle-right:before {
   content: "\f105";
   color: #8bc34a;
-  font-weight: 900; }
+  font-weight: 900;
+  padding-right: 10px; }
 
 .fa-location-arrow:before {
   content: "\f124";
@@ -9646,3 +9686,96 @@ footer a:hover {
   font-size: 0.733rem;
   line-height: 1;
   letter-spacing: 1px; }
+
+.icon-card-wrapper {
+  margin: 0 auto;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  text-align: center;
+  border: 3px solid transparent;
+  background-color: #b5b5b5; }
+
+.icon-card-title {
+  padding: 30px 0 25px 0;
+  text-align: center; }
+
+.foxtar-card:hover .icon-card-wrapper {
+  background-color: #d4d4d4;
+  border: 3px solid #8bc34a; }
+
+.foxtar-card:hover h4 {
+  color: #8bc34a; }
+
+.card-text {
+  text-align: center; }
+
+.why-choose-foxtar a {
+  color: inherit; }
+
+.why-choose-foxtar h2 {
+  padding-bottom: 80px; }
+
+.fa-donate:before {
+  content: "\f4b9";
+  font-size: 4rem;
+  color: #263238; }
+
+.fa-thumbs-up:before {
+  content: "\f164";
+  font-size: 4rem;
+  color: #263238; }
+
+.fa-key:before {
+  content: "\f084";
+  font-size: 4rem;
+  color: #263238; }
+
+.section-secondary {
+  background-color: #f4f6f5;
+  padding: 130px 0 137px 0; }
+
+.external-container {
+  background-color: #b5b5b5;
+  -webkit-box-shadow: 1px 1px 30px #b5b5b5;
+          box-shadow: 1px 1px 30px #b5b5b5; }
+
+.wrapper-inner-container {
+  padding: 115px 226px 107px 226px; }
+
+.inner-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background-color: #8bc34a;
+  text-align: center;
+  padding: 71px 59px 82px 59px;
+  margin: 0 auto; }
+
+.text-inner-container {
+  width: 50%;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left; }
+  .text-inner-container span {
+    font-weight: 700; }
+
+.button-inner-container {
+  vertical-align: middle; }
+
+.card-offer {
+  background-color: #f8f8f8;
+  text-align: center; }
+
+.card-offer-title h3 {
+  color: #263238; }
+
+.card-offer-title {
+  padding: 18px 0; }
+
+.section-offer h2 {
+  padding-bottom: 47px; }
