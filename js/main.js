@@ -23,18 +23,32 @@ var filterFns = {
         return name.match( /ium$/ );
     }
 };
-// filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
-    // use filter function if value matches
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $grid.isotope({ filter: filterValue });
+$('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function( event ) {
+        $('.button-group').find('.is-checked').removeClass('is-checked');
+        var $button = $( event.currentTarget );
+        $button.addClass('is-checked');
+    });
 });
 /*
 * isotope init end
 */
+
+var html = '<ol class="carousel-indicators">';
+for (var i = 0; i < $('#recipeCarousel .carousel-item').length; i++) {
+    if(i===0){
+        html += '<li class="item' + i + ' active" data-number="' + i + '"></li>';
+    }else{
+        html += '<li class="item' + i + '" data-number="' + i + '"></li>';
+    }
+}
+html += '</ol>';
+$("#recipeCarousel").append(html);
+
+
 $('#recipeCarousel').carousel({
-    interval: 10000, dots: true
+    interval: 10000
 })
 
 $('.carousel .carousel-item').each(function(){
@@ -54,3 +68,14 @@ $('.carousel .carousel-item').each(function(){
     }
 });
 
+
+
+
+$("#recipeCarousel .carousel-indicators li").on('click', function(){
+    $("#recipeCarousel").carousel($(this).data('number'));
+});
+
+
+
+
+//console.log(html);

@@ -25,9 +25,12 @@
   border-radius: 0;
   padding: 10px 25px;
 
-  &:focus {
+  &.is-checked {
     background-color: $color-brand-secondary;
     color: #f4f6f5;
+  }
+  &:focus {
+    box-shadow:none;
   }
 
 }

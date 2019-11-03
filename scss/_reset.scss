@@ -13,28 +13,25 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-family: inherit, sans-serif;
-    font-size: 3.2rem;
-    line-height: 2rem;
+    font-family: inherit, sans-serif;    
     font-weight: 700; 
     color: $header-color-main;
 }
+h1 {
+    font-size: 3.2rem;
+    line-height: 2rem;
+}
 h2 {
-    @extend h1;
     font-size: 2.4rem;
     line-height: 2.66rem;
-    font-weight: 700;
     color: $color-btn_font-secondary;
 }
 h3 {
-    @extend h2;
     font-size: 1.6rem;
     line-height: 4rem;
-    font-weight: 700;
     color: $header-color-main;
 }
 h4 {
-    @extend h3;
     font-size: 1.6rem;
     line-height: 4rem;
     font-weight: 500;
@@ -44,15 +41,13 @@ h4 {
     }
 }
 h5 {
-    @extend h4;
     font-family: 'Raleway', sans-serif;
-    font-size: 1,477rem;
+    font-size: 1,4667rem;
     line-height: 4rem;
     font-weight: 700;
     color: $header-color-main;
 }
 h6 {
-    @extend h5;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     line-height: 4rem;
@@ -69,6 +64,9 @@ ul {
 a {
     color: inherit;
     text-decoration: none; 
+}
+a:hover {
+    text-decoration: none;
 }
 img {
     max-width: 100%; 

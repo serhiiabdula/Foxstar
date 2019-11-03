@@ -34,7 +34,9 @@
 }
 .carousel {
   padding-top: 60px;
-}
+
+  }
+
 .carousel-control-prev-icon {
   background-image: none;
 }
@@ -42,23 +44,20 @@
   background-image: none;
 }
 .carousel-indicators{
+  .active {
+    background-color: $color-brand-primary;
+  }
   transform: translateY(70px);
   li {
     width: 15px;
     height: 15px;
+    opacity: 1;
 
     border-radius:10px;
     border-top: none;
     border-bottom: none;
     background-color: #e8e8e8;
     border: 1px solid #acacac;
-  }
-  &:active {
-    background-color: $color-brand-primary;
-
-    border: 1px solid transparent;
-
-
   }
 
 }
