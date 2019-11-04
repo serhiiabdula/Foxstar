@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/roboto-regular-webfont.eot');
+    src: url('../fonts/Roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto/roboto-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/Roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto/roboto-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/roboto-bold-webfont.eot');
+    src: url('../fonts/Roboto/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/Roboto/roboto-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/lato-semibold-webfont.eot');
+    src: url('../fonts/lato/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/lato/lato-semibold-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Open_Sans/opensans-semibold-webfont.eot');
+    src: url('../fonts/Open_Sans/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Open_Sans/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/Open_Sans/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/Open_Sans/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/raleway-bold-webfont.eot');
+    src: url('../fonts/Raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/Raleway/raleway-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("../fonts/FontAwesome/fa-solid-900.eot");
+    src: url("../fonts/FontAwesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/FontAwesome/fa-solid-900.woff2") format("woff2"),
+         url("../fonts/FontAwesome/fa-solid-900.woff") format("woff"), 
+         url("../fonts/FontAwesome/fa-solid-900.ttf") format("truetype"), 
+         url("../fonts/FontAwesome/fa-solid-900.svg#fontawesome") format("svg"); 
+} 
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/FontAwesome/fa-regular-400.eot");
+    src: url("../fonts/FontAwesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/FontAwesome/fa-regular-400.woff2") format("woff2"),
+         url("../fonts/FontAwesome/fa-regular-400.woff") format("woff"), 
+         url("../fonts/FontAwesome/fa-regular-400.ttf") format("truetype"), 
+         url("../fonts/FontAwesome/fa-regular-400.svg#fontawesome") format("svg"); 
+}  
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/FontAwesome/fa-brands-400.eot");
+    src: url("../fonts/FontAwesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/FontAwesome/fa-brands-400.woff2") format("woff2"), 
+         url("../fonts/FontAwesome/fa-brands-400.woff") format("woff"), 
+         url("../fonts/FontAwesome/fa-brands-400.ttf") format("truetype"), 
+         url("../fonts/FontAwesome/fa-brands-400.svg#fontawesome") format("svg"); 
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands'; 
+    font-style: normal;
+}
+.fa,.fas,.far {
+    font-style: normal;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+}
+// .fa-map-marker-alt:before {content: "\f3c5";}
+// .fa-phone-alt:before {content: "\f879";}
+
+// .fa-facebook-square:before {content: "\f082";}
+// .fa-twitter-square:before {content: "\f081";}
+// .fa-youtube-square:before {content: "\f431";}
+// .fa-youtube:before {content: "\f167";}
+// .fa-pinterest:before {content: "\f0d2";}
+// .fa-linkedin:before {content: "\f08c";}
+// .fa-location-arrow:before {content: "\f124";}

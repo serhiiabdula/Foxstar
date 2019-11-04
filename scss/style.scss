@@ -1,3 +1,11 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../scss/_header.scss';
-
+@import 'header';
+@import 'reset';
+@import 'typography';
+@import 'variables';
+@import 'button';
+@import 'layout';
+@import 'columns';
+@import "section-hero";
+@import "card-listing";
+@import 'footer';
