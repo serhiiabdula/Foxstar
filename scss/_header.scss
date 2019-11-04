@@ -38,9 +38,18 @@
 .nav-right-actions {
     .btn {
         padding: 4px 20px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 12px;
     }
     .btn-first {
         margin-right: 7px;
+    }
+    .btn-success {
+        background-color: #8bc34a;
+    }
+    .btn-danger {
+        background-color: #e74c3c;
     }
 }
 .nav-right-actions ul {

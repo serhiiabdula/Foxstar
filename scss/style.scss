@@ -1,5 +1,4 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'header';
 @import 'reset';
 @import 'typography';
 @import 'variables';
@@ -7,5 +6,10 @@
 @import 'layout';
 @import 'columns';
 @import "section-hero";
-@import "card-listing";
+@import "listing";
+@import "section-week-treding";
 @import 'footer';
+@import 'section-why-choose-foxtar';
+@import 'section-become-author';
+@import 'section-sales-offer';
+@import 'header';

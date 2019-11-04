@@ -1,31 +1,95 @@
+.section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
 
-.card {
-  position: relative;
+
+.listing {
+  background-color: #f4f6f5;
+
+
+}
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.button-group {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+.btn{
+  background-color: $color-btn_font-primary;
+  color: $color-btn_font-secondary;
+  font-size: 1.067rem;
+  border-radius: 0;
+  padding: 10px 25px;
+
+  &.is-checked {
+    background-color: $color-brand-secondary;
+    color: #f4f6f5;
+  }
+  &:focus {
+    box-shadow:none;
+  }
+
+}
+.btn-alternative{
+  padding: 0 30px;
+}
+
+.title {
+
+    color:#000000;
+    text-align: center;
+
+  }
+.card-label {
   &:before {
     content: "";
-    background:url("../img/card-label.jpg") no-repeat;
+    background:url("../img/card-label.png") no-repeat;
     position: absolute;
     top: 0;
     left:0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
 
   }
+}
+.card {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 30px;
+
+
   .card-title {
     font-family: Roboto;
+    color:#000000;
+    font-size:18px;
   }
+  .price {
+    font-family: Roboto;
+    color:#000000;
+    font-size:18px;
+
+  }
+
   .data {
     display: flex;
     justify-content: space-between;
 
   }
   .card-inf{
-    padding: 30px 30px 0 30px;
+    padding: 30px;
   }
   .bottompart {
     display: flex;
-    border-top: 2px #6c757d solid;
+    border-top: 2px #f4f6f5 solid;
+
 
     justify-content: space-between;
-    padding: 30px 30px 0 30px;
+    padding: 20px 30px;
 
   }
 
@@ -38,6 +102,7 @@
       }
       .author-descript {
         padding-left: 15px;
+        color:#000000;
       }
 
     }
@@ -46,6 +111,7 @@
       display: flex;
       .rating-discrip {
         padding-left: 15px;
+        color:#000000;
       }
 
       .stars {
@@ -63,7 +129,7 @@
 
           height: 20px;
           background-image: url("../img/stars.png");
-          background-position: 0 -20px;
+          background-position: 0 -20px
         }
 
         .live {
