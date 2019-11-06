@@ -6,6 +6,11 @@
     margin-right: auto;
     margin-left: auto; 
 }
+.container-fluid {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
