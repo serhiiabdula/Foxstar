@@ -1,0 +1,20 @@
+.local-menu {
+    display: flex;
+    padding: 48px 0 39px 0;
+    letter-spacing: 1px;
+    li span {
+        color: $color-brand-primary;
+    }
+    li:first-child {
+        background-color: #3b5998;
+        line-height: 2.667rem;
+    }
+    li:last-child {
+        background-color: red;
+        line-height: 2.667rem;
+        color: $color-btn_font-secondary;
+    }
+}
+.section-upload-products h4 {
+    color: $header-color-alternative;
+}
