@@ -6,36 +6,47 @@
 }
 
 
-.card-mini {
-  .author-descript {
-  font-size: 12px;
-    line-height: 2.5;
-    padding-right: 5px;
-  }
-  .card-inf{
-    padding: 23px 26px;
-  }
-  .card-title {
-    font-size: 16px;
-    line-height: 1rem;
-  }
-  .price {
-    font-size: 16px;
-    line-height: 1rem;
-  }
-  .card-descript {
-    font-size: 14px;
-    color:#8bc34a;
-  }
+  .card-mini {
+    .author {
+      .author-descript {
+        font-size: 12px;
+        line-height: 2.5;
+        padding-left: 5px;
+      }
+    }
+.rating {
   .rating-discrip {
     font-size: 12px;
     line-height: 2.5;
     padding-left: 5px;
   }
-  .bottompart {
-    padding: 16px 23px;
-  }
 }
+    .card-inf {
+      padding: 23px 26px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      line-height: 1rem;
+    }
+
+    .price {
+      font-size: 16px;
+      line-height: 1rem;
+    }
+
+    .card-descript {
+      font-size: 14px;
+      color: #8bc34a;
+    }
+
+
+
+    .bottompart {
+      padding: 16px 23px;
+    }
+  }
+
 
 .col-mini {
   padding: 0;
@@ -136,6 +147,7 @@
   position: relative;
   padding: 15px 60px 15px 80px;
   margin-top: 30px;
+  width: 100%git;
 
 
   &:before {
@@ -144,7 +156,7 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    left: 40px;
+    left: 50px;
     top: 20px;
   }
 
@@ -240,5 +252,11 @@
       }
     }
   }
+   .btn-view-all{
+     width: 100%;
+     background-color:#8bc34a;
+     color:#ffffff;
+   }
+
 
 
