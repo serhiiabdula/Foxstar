@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -15,28 +16,594 @@
         <input type="submit" name="go" value="" id="searchButton" class="all_searchButton">
     </form>
 </section>
-<section class="section-main">
+<section class=" section section-main">
+    <div class="container">
     <div class="row_main">
-        <div class="col-sm-3 col-md-3 col-lg-3">
+
+        <div class="col-sm-3 col-md-3 col-lg-3 col-mr">
+
             <div class="card-categories">
-                <h4 class="categories-title">Caterories</h4>
+                <h5 class="categories-title">Categories</h5>
                 <ul class="main-categories">
-                    <li>WordPress<span>(150)</span></li>
-                    <li>Joomla<span>(100)</span></li>
-                    <li>PSD<span>50</span></li>
-                    <li>Plugins<span>60</span></li>
-                    <li>Components<span>40</span></li>
+                    <li><p class="name-category">WordPress</p>
+                        <p class="price-category">(150)</p>
+                    </li>
+                    <li><p class="name-category">Joomla</p>
+                        <p class="price-category">(100)</P>
+                    </li>
+                    <li><p class="name-category">PSD</p>
+                        <p class="price-category">(50)</p>
+                    </li>
+                    <li><p class="name-category">Plugins</p>
+                        <p class="price-category">(60)</p>
+                    </li>
+                    <li><p class="name-category">Components</p>
+                        <p class="price-category">(40)</p>
+                    </li>
                 </ul>
             </div>
-        </div>
-        <div class="col-sm-9 col-md-9 col-lg-9">
 
+
+            <div class="card-price-range">
+                <h5 class="categories-title">Price Range</h5>
+                <div class="range-button">
+                    <input type="text" class="js-range-slider" name="my_range" value=""
+                   data-type="double"
+                   data-min="0"
+                   data-max="1000"
+                   data-from="200"
+                   data-to="500"
+                   data-grid="true"
+            />
+                    <button class="btn btn-price-range">Search</button>
+                </div>
+            </div>
+
+                <div class="card-top-ten">
+                    <h5 class="categories-title">Top 10 Sellers</h5>
+                    <div class="cards">
+                        <div class="card card-mini">
+                            <div class="card-img">
+                                <img src="img/card-pic.jpg" alt="" class="img">
+                            </div>
+                            <div class="card-inf">
+                                <div class="data">
+                                    <h5 class="card-title">Imac Mockup</h5>
+                                    <h5 class="price">$12</h5>
+                                </div>
+                                <p class="card-descpipt">PSD Template</p>
+                            </div>
+                            <div class="bottompart">
+                                <div class="author">
+                                    <img src="img/card-author.jpg" class="card-author">
+                                    <p class="author-descript">Lolypop</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars-mini">
+                                        <div class="on" style="width: 88%;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-mini">
+                            <div class="card-img">
+                                <img src="img/card-pic.jpg" alt="" class="img">
+                            </div>
+                            <div class="card-inf">
+                                <div class="data">
+                                    <h5 class="card-title">Imac Mockup</h5>
+                                    <h5 class="price">$12</h5>
+                                </div>
+                                <p class="card-descpipt">PSD Template</p>
+                            </div>
+                            <div class="bottompart">
+                                <div class="author">
+                                    <img src="img/card-author.jpg" class="card-author">
+                                    <p class="author-descript">Lolypop</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars-mini">
+                                        <div class="on" style="width: 88%;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-mini">
+                            <div class="card-img">
+                                <img src="img/card-pic.jpg" alt="" class="img">
+                            </div>
+                            <div class="card-inf">
+                                <div class="data">
+                                    <h5 class="card-title">Imac Mockup</h5>
+                                    <h5 class="price">$12</h5>
+                                </div>
+                                <p class="card-descpipt">PSD Template</p>
+                            </div>
+                            <div class="bottompart">
+                                <div class="author">
+                                    <img src="img/card-author.jpg" class="card-author">
+                                    <p class="author-descript">Lolypop</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars-mini">
+                                        <div class="on" style="width: 88%;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-view-all">View All</button>
+
+                </div>
         </div>
+        <div class="col-sm-9 col-md-9 col-lg-9 pr-0">
+                <div class=" row row-sm">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="card card-mini">
+                                <div class="card-img">
+                                    <img src="img/card-pic.jpg" alt="" class="img-listing">
+                                </div>
+                                <div class="card-inf">
+                                    <div class=" data data-mini">
+                                        <h5 class="card-title ">Imac Mockup</h5>
+                                        <h5 class="price">$12</h5>
+                                    </div>
+                                    <p class="card-descript">PSD Template</p>
+                                </div>
+                                <div class="bottompart">
+                                    <div class="author">
+                                        <img src="img/card-author.jpg" class="card-author">
+                                        <p class="author-descript">Lolypop</p>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars-mini">
+                                            <div class="on" style="width: 88%;"></div>
+                                            <div class="live">
+                                                <span data-rate="1"></span>
+                                                <span data-rate="2"></span>
+                                                <span data-rate="3"></span>
+                                                <span data-rate="4"></span>
+                                                <span data-rate="5"></span>
+                                            </div>
+                                        </div>
+
+                                        <p class="rating-discrip">(05)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="card card-mini">
+                            <div class="card-img">
+                                <img src="img/card-pic.jpg" alt="" class="img-listing">
+                            </div>
+                            <div class="card-inf">
+                                <div class=" data data-mini">
+                                    <h5 class="card-title ">Imac Mockup</h5>
+                                    <h5 class="price">$12</h5>
+                                </div>
+                                <p class="card-descript">PSD Template</p>
+                            </div>
+                            <div class="bottompart">
+                                <div class="author">
+                                    <img src="img/card-author.jpg" class="card-author">
+                                    <p class="author-descript">Lolypop</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars-mini">
+                                        <div class="on" style="width: 88%;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+
+                                    <p class="rating-discrip">(05)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="card card-mini">
+                            <div class="card-img">
+                                <img src="img/card-pic.jpg" alt="" class="img-listing">
+                            </div>
+                            <div class="card-inf">
+                                <div class=" data data-mini">
+                                    <h5 class="card-title ">Imac Mockup</h5>
+                                    <h5 class="price">$12</h5>
+                                </div>
+                                <p class="card-descript">PSD Template</p>
+                            </div>
+                            <div class="bottompart">
+                                <div class="author">
+                                    <img src="img/card-author.jpg" class="card-author">
+                                    <p class="author-descript">Lolypop</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars-mini">
+                                        <div class="on" style="width: 88%;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+
+                                    <p class="rating-discrip">(05)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class=" row row-sm ">
+                <div class="col-sm-4 col-md-4 col-lg-4  ">
+                        <div class="card card-mini">
+                            <div class="card-img">
+                                <img src="img/card-pic.jpg" alt="" class="img-listing">
+                            </div>
+                            <div class="card-inf">
+                                <div class=" data data-mini">
+                                    <h5 class="card-title ">Imac Mockup</h5>
+                                    <h5 class="price">$12</h5>
+                                </div>
+                                <p class="card-descript">PSD Template</p>
+                            </div>
+                            <div class="bottompart">
+                                <div class="author">
+                                    <img src="img/card-author.jpg" class="card-author">
+                                    <p class="author-descript">Lolypop</p>
+                                </div>
+                                <div class="rating">
+                                    <div class="stars-mini">
+                                        <div class="on" style="width: 88%;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+
+                                    <p class="rating-discrip">(05)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 ">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 ">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row row-sm">
+                <div class="col-sm-4 col-md-4 col-lg-4 ">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row row-sm">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card card-mini">
+                        <div class="card-img">
+                            <img src="img/card-pic.jpg" alt="" class="img-listing">
+                        </div>
+                        <div class="card-inf">
+                            <div class=" data data-mini">
+                                <h5 class="card-title ">Imac Mockup</h5>
+                                <h5 class="price">$12</h5>
+                            </div>
+                            <p class="card-descript">PSD Template</p>
+                        </div>
+                        <div class="bottompart">
+                            <div class="author">
+                                <img src="img/card-author.jpg" class="card-author">
+                                <p class="author-descript">Lolypop</p>
+                            </div>
+                            <div class="rating">
+                                <div class="stars-mini">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+
+                                <p class="rating-discrip">(05)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-group-all">
+                <button  class="btn btn-all-new is-checked">1</button>
+                <button  class="btn btn-all-new ">2</button>
+                <button class="btn btn-all-new">3</button>
+                <button  class="btn btn-all-new">4</button>
+            </div>
+
     </div>
+
 </section>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+<script>
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 500,
+        grid: true
+    });
+</script>
 </body>
 </html>
