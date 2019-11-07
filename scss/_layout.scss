@@ -6,6 +6,11 @@
     margin-right: auto;
     margin-left: auto; 
 }
+.container-fluid {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +69,10 @@ $xl: 1170px;
     .col-sm {
         max-width: 100%; 
     }
+    .col-sm-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
     .col-sm-3 {
         flex: 0 0 25%;
         max-width: 25%; 
@@ -79,6 +88,10 @@ $xl: 1170px;
     .col-sm-9 {
         flex: 0 0 75%;
         max-width: 75%; 
+    }
+    .col-sm-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; 
     }
     .col-sm-12 {
         flex: 0 0 100%;
@@ -117,6 +130,10 @@ $xl: 1170px;
     .col-md {
         max-width: 100%; 
     }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%; 
@@ -133,6 +150,10 @@ $xl: 1170px;
         flex: 0 0 75%;
         max-width: 75%; 
     }
+    .col-md-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; 
+    }
     .col-md-12 {
         flex: 0 0 100%;
         max-width: 100%; 
@@ -145,6 +166,10 @@ $xl: 1170px;
     }
     .col-lg {
         max-width: 100%; 
+    }
+    .col-lg-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
     }
     .col-lg-3 {
         flex: 0 0 25%;
@@ -162,6 +187,10 @@ $xl: 1170px;
         flex: 0 0 75%;
         max-width: 75%; 
     }
+    .col-lg-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; 
+    }
     .col-lg-12 {
         flex: 0 0 100%;
         max-width: 100%; 
@@ -174,6 +203,10 @@ $xl: 1170px;
     }
     .col-xl {
         max-width: 100%; 
+    }
+    .col-xl-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
     }
     .col-xl-3 {
         flex: 0 0 25%;
@@ -190,6 +223,10 @@ $xl: 1170px;
     .col-xl-9 {
         flex: 0 0 75%;
         max-width: 75%; 
+    }
+    .col-xl-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; 
     }
     .col-xl-12 {
         flex: 0 0 100%;

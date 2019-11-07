@@ -1,0 +1,322 @@
+.section-main {
+  background-color: #f4f6f5;
+}
+.row_main {
+  display: flex;
+}
+
+
+  .card-mini {
+    .author {
+      .author-descript {
+        font-size: 12px;
+        line-height: 2.5;
+        padding-left: 5px;
+      }
+    }
+.rating {
+  .rating-discrip {
+    font-size: 12px;
+    line-height: 2.5;
+    padding-left: 5px;
+  }
+}
+    .card-inf {
+      padding: 23px 26px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      line-height: 1rem;
+    }
+
+    .price {
+      font-size: 16px;
+      line-height: 1rem;
+    }
+
+    .card-descript {
+      font-size: 14px;
+      color: #8bc34a;
+    }
+
+
+
+    .bottompart {
+      padding: 16px 23px;
+    }
+  }
+
+
+.col-mini {
+  padding: 0;
+}
+.categories-title {
+
+  color: #000000;
+}
+
+.card-categories {
+  margin-bottom: 30px;
+  padding: 0 30px 40px 30px;
+  background-color: #ffffff;
+  border: 2px #dedede solid;
+
+
+  .main-categories{
+    border-top: 2px #dedede solid;
+    padding-top: 30px;
+
+    li {
+      display: flex;
+      line-height: 2.5;
+      justify-content: space-between;
+
+
+      color:#000000;
+        p.name-category:before {
+        content: ">";
+        color: #8bc34a;
+        font-weight: 900;
+        padding-right: 10px;
+      }
+      .price-category {
+        color:#506e7a;
+
+
+      }
+
+    }
+
+  }
+}
+.card-price-range {
+
+  background-color: #ffffff;
+  padding:0 30px 30px 30px;
+  margin-bottom: 30px;
+  border: 2px #dedede solid;
+
+
+}
+.range-button {
+  border-top: 2px #dedede solid;
+  padding-top: 20px;
+}
+.irs--flat{
+  .irs-min {
+    display: none;
+  }
+  .irs-max {
+    display: none;
+  }
+  .irs-single{
+    display: none;
+  }
+  .irs-line {
+    height: 5px;
+    border-radius: 6px;
+  }
+  .irs-bar {
+    height: 5px;
+    background-color: #37474f;
+  }
+  .irs-from {
+    color: #506e7a;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 8;
+    padding: 1px 23px;
+    &:before {
+      content: '$';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-top-color: transparent;
+      border: none;
+      left:15px;
+      bottom:0;
+    }
+  }
+
+   .irs-grid{
+      display: none;
+    }
+  .irs-to {
+    color: #506e7a;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 8;
+    padding: 0 23px;
+    &:before{
+      content: '$';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-top-color: transparent;
+      border: none;
+      left:15px;
+      bottom:0;
+    }
+
+
+  }
+  .irs-handle {
+     i:first-child {
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
+      border: 3px #8bc34a solid;
+      border-radius: 15px;
+       margin-left: -5px;
+       margin-top: -2px
+
+    }
+  }
+  .irs-handle {
+    &:hover {
+      i:first-child {
+        background-color: #ffffff;
+        }
+      }
+
+
+    i:first-child {
+      &:hover {
+      background-color: #ffffff;
+      }
+    }
+
+    }
+
+  }
+
+.btn-price-range{
+  background-color: #8bc34a;
+  color: #ffffff;
+  position: relative;
+  padding: 15px 60px 15px 80px;
+  margin-top: 30px;
+  width: 100%;
+
+
+  &:before {
+    content: '';
+    background: url("../img/search.png") no-repeat;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 50px;
+    top: 20px;
+  }
+
+
+  }
+.card-top-ten {
+
+  background-color: #ffffff;
+  padding: 0 30px 30px 30px;
+  border: 2px #dedede solid;
+
+}
+.pr-0{
+  padding-left: 0;
+}
+.cards {
+  padding-top: 26px;
+  border-top: 2px #dedede solid;
+}
+.card-top-ten {
+  .card {
+    border: none;
+
+    &:hover{
+      box-shadow: none;
+    }
+    .card-inf{
+      padding: 20px 0;
+
+    }
+    .bottompart {
+      border-top: none;
+      padding: 0;
+    }
+
+
+  }
+
+
+
+}
+.stars-mini {
+  position: relative;
+  display: block;
+  float: left;
+  height: 10px;
+  width: 60px;
+  background-image: url("../img/stars.png");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  margin-right: 5px;
+  background-size: 10px;
+  top: 10px;
+
+  .on {
+    width: 88%;
+    height: 10px;
+    background-image: url("../img/stars.png");
+    background-position: 0 -10px;
+    background-size: 10px;
+
+  }
+
+  .live {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    &:hover {
+
+      opacity: 1;
+    }
+
+    span {
+
+      display: block;
+      float: left;
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      background-image: url("../img/stars.png");
+      background-repeat: no-repeat;
+      background-position: 0 -10px;
+      background-size: 10px;
+
+      &:hover {
+        ~ span {
+          background-position: 0 0px;
+        }
+      }
+    }
+  }
+}
+   .btn-view-all{
+     width: 100%;
+     background-color:#8bc34a;
+     color:#ffffff;
+   }
+   .button-group-all {
+     margin-top: 60px;
+     margin-bottom: 60px;
+
+   }
+   .btn-all-new {
+     margin-right: 3px;
+     padding: 7px 18px;
+     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);;
+   }
+
+
+

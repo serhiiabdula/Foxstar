@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/Roboto/roboto-medium-webfont.eot');
     src: url('../fonts/Roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Roboto/roboto-medium-webfont.woff2') format('woff2'),
          url('../fonts/Roboto/roboto-medium-webfont.woff') format('woff'),
@@ -65,6 +65,17 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'pt_sansregular';
+    src: url('../fonts/PT_Sans_instead_MyriadPro/ptsans-regular-webfont.eot');
+    src: url('../fonts/PT_Sans_instead_MyriadPro/ptsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PT_Sans_instead_MyriadPro/ptsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/PT_Sans_instead_MyriadPro/ptsans-regular-webfont.woff') format('woff'),
+         url('../fonts/PT_Sans_instead_MyriadPro/PTSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 900;
@@ -108,4 +119,47 @@
     font-style: normal;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900; 
+}
+
+// HEADERS style
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: inherit, sans-serif;
+    font-weight: 700; 
+    color: $header-color-main;
+}
+h1 {
+    font-size: 3.2rem;
+    line-height: 2rem;
+}
+h2 {
+    font-size: 2.4rem;
+    line-height: 2.66rem;
+    text-align: center;
+    color: $color-btn_font-secondary;
+}
+h3 {
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: $header-color-main;
+}
+h4 {
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 500;
+    color: $header-color-main;
+}
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4667rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: $header-color-main;
+}
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    font-weight: 500;
+    color: $header-color-alternative;
 }

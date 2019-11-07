@@ -27,8 +27,8 @@
     font-family: Roboto;
     font-size: 14px;
     border: transparent;
-    color: #99abb4;
-    padding-right: 424px;
+    color: #90a4ae;
+    margin-right: 426px;
   }
 
   .searchButton {
@@ -46,12 +46,21 @@
   .hero-search {
     position: relative;
     background-color: #ffffff;
-    border-radius: 3px;
+    border-radius: 5px;
     border: transparent;
     display: inline-block;
-    padding: 23px 26px;
+    padding: 23px 23px;
 
-    box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+    box-shadow: 0px 1px 15px 0px rgba(137, 144, 81, 1);
   }
 
+}
+.card-mini {
+  img-mini {
+width: 100%;
+
+  }
+}
+.col-mr {
+  margin-right: 15px;
 }
