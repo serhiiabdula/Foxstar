@@ -9770,10 +9770,6 @@ footer a:hover {
 .section-offer h2 {
   padding-bottom: 47px; }
 
-.container {
-  max-width: 1170px;
-  margin: 0 auto; }
-
 .header-top {
   padding: 27px 0 17px 0;
   display: -webkit-box;
@@ -9809,20 +9805,22 @@ footer a:hover {
   width: 34px;
   border-radius: 100%;
   border: none; }
+  .btn-icon:after {
+    display: none; }
 
-.nav-right-actions .btn, .nav-right-actions .btn-primary, .nav-right-actions .btn-secondary {
+.nav-right-actions .btn, .nav-right-actions .btn-primary, .nav-right-actions .btn-secondary, .total-button .btn, .total-button .btn-primary, .total-button .btn-secondary {
   padding: 4px 20px;
   border-radius: 4px;
   color: #fff;
   font-size: 12px; }
 
-.nav-right-actions .btn-first {
+.nav-right-actions .btn-first, .total-button .btn-first {
   margin-right: 7px; }
 
-.nav-right-actions .btn-success {
+.nav-right-actions .btn-success, .total-button .btn-success {
   background-color: #8bc34a; }
 
-.nav-right-actions .btn-danger {
+.nav-right-actions .btn-danger, .total-button .btn-danger {
   background-color: #e74c3c; }
 
 .nav-right-actions ul {
