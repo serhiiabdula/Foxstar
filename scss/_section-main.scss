@@ -58,7 +58,7 @@
 
 .card-categories {
   margin-bottom: 30px;
-  padding: 0 30px 45px 30px;
+  padding: 0 30px 40px 30px;
   background-color: #ffffff;
   border: 2px #dedede solid;
 
@@ -69,7 +69,7 @@
 
     li {
       display: flex;
-      line-height: 3;
+      line-height: 2.5;
       justify-content: space-between;
 
 
@@ -93,7 +93,7 @@
 .card-price-range {
 
   background-color: #ffffff;
-  padding:0 30px 45px 30px;
+  padding:0 30px 30px 30px;
   margin-bottom: 30px;
   border: 2px #dedede solid;
 
@@ -101,9 +101,18 @@
 }
 .range-button {
   border-top: 2px #dedede solid;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .irs--flat{
+  .irs-min {
+    display: none;
+  }
+  .irs-max {
+    display: none;
+  }
+  .irs-single{
+    display: none;
+  }
   .irs-line {
     height: 5px;
     border-radius: 6px;
@@ -115,11 +124,42 @@
   .irs-from {
     color: #506e7a;
     background-color: transparent;
-
+    font-size: 15px;
+    line-height: 8;
+    padding: 1px 23px;
+    &:before {
+      content: '$';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-top-color: transparent;
+      border: none;
+      left:15px;
+      bottom:0;
+    }
   }
+
+   .irs-grid{
+      display: none;
+    }
   .irs-to {
     color: #506e7a;
     background-color: transparent;
+    font-size: 15px;
+    line-height: 8;
+    padding: 0 23px;
+    &:before{
+      content: '$';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-top-color: transparent;
+      border: none;
+      left:15px;
+      bottom:0;
+    }
+
+
   }
   .irs-handle {
      i:first-child {
@@ -128,9 +168,19 @@
       background-color: #ffffff;
       border: 3px #8bc34a solid;
       border-radius: 15px;
+       margin-left: -5px;
+       margin-top: -2px
+
     }
   }
   .irs-handle {
+    &:hover {
+      i:first-child {
+        background-color: #ffffff;
+        }
+      }
+
+
     i:first-child {
       &:hover {
       background-color: #ffffff;
@@ -147,7 +197,7 @@
   position: relative;
   padding: 15px 60px 15px 80px;
   margin-top: 30px;
-  width: 100%git;
+  width: 100%;
 
 
   &:before {
@@ -165,7 +215,7 @@
 .card-top-ten {
 
   background-color: #ffffff;
-  padding: 0 30px 45px 30px;
+  padding: 0 30px 30px 30px;
   border: 2px #dedede solid;
 
 }
@@ -210,7 +260,6 @@
   margin-right: 5px;
   background-size: 10px;
   top: 10px;
-}
 
   .on {
     width: 88%;
@@ -252,10 +301,21 @@
       }
     }
   }
+}
    .btn-view-all{
      width: 100%;
      background-color:#8bc34a;
      color:#ffffff;
+   }
+   .button-group-all {
+     margin-top: 60px;
+     margin-bottom: 60px;
+
+   }
+   .btn-all-new {
+     margin-right: 3px;
+     padding: 7px 18px;
+     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);;
    }
 
 

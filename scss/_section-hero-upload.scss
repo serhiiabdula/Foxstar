@@ -1,0 +1,42 @@
+.hero_upload {
+  padding: 60px 0 60px 0;
+  background: url("../img/background-foxtar-second.jpg") no-repeat;
+  text-align: center;
+}
+.upload_hero-descript {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+.upload_search {
+  font-family: Roboto;
+  font-size: 14px;
+  border: transparent;
+  color: #90a4ae;
+  margin-right: 426px;
+}
+.upload_hero-search {
+  position: relative;
+  background-color: #ffffff;
+  border-radius:5px;
+  border: transparent;
+  display: inline-block;
+  padding: 23px 23px;
+
+  box-shadow: 0px 1px 15px 0px rgba(137, 144, 81, 1);
+}
+.upload_searchButton {
+  position: absolute;
+  background: url("../img/icon-hero.png") no-repeat;
+  border: transparent;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 25px;
+
+
+}
+
