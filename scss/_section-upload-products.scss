@@ -7,6 +7,10 @@
         border: 1px solid $color-form-border;
         background-color: $color-background-default;
         width: 100%;
+        &:last-of-type {
+            border: transparent;
+            // padding-left: 0;
+        }
     }
 }
 .local-menu {
@@ -62,7 +66,26 @@
     line-height: 1.5;
     color: $color-form-text-input;
     background-color: $color-background-secondary;
-    // background-clip: padding-box;
     border: 1px solid #ddd;
+    border-radius: 0;
+}
+.form-group .btn-primary {
+    background-color: #8bc34a;
+    color: $color-btn_font-primary;
+    font-size: 1rem;
+    padding: 16px 40px 19px 35px;
+    line-height: 1;
+    margin-top: 42px;
+}
+.custom-select {
+    font-family: 'pt_sansregular';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-form-text-input;
+    border-radius: 0;
+    background-color: $color-background-secondary;
+}
+.custom-file-label {
     border-radius: 0;
 }

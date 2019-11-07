@@ -36,7 +36,14 @@
                         <div class="form-group row">
                             <label for="inputPassword" class="col-2 col-form-label">Select Categories</label>
                             <div class="col-10">
-                                <input type="text" class="form-control" id="inputPassword" placeholder="Select">
+                                <select class="custom-select">
+                                        <option selected>Select</option>
+                                        <option value="1">Category 1</option>
+                                        <option value="2">Category 2</option>
+                                        <option value="3">Category 3</option>
+                                        <option value="4">Category 4</option>
+                                        <option value="5">Category 5</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -54,7 +61,10 @@
                         <div class="form-group row">
                             <label for="inputPassword" class="col-2 col-form-label">Upload Main File</label>
                             <div class="col-10">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="No File Choosen">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -66,7 +76,14 @@
                         <div class="form-group row">
                             <label for="inputPassword" class="col-2 col-form-label">File Included</label>
                             <div class="col-10">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Select File Type">
+                                <select class="custom-select">
+                                        <option selected>Select File type</option>
+                                        <option value="1">File type 1</option>
+                                        <option value="2">File type 2</option>
+                                        <option value="3">File type 3</option>
+                                        <option value="4">File type 4</option>
+                                        <option value="5">File type 5</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -82,6 +99,7 @@
                             </div>
                         </div>
                     </form>
+                    <h4>Set Your Price (US$)</h4>
                 </div>
                 <div class="form-upload-wrapper">
                     <form>
@@ -103,5 +121,9 @@
             </div>
         </div>
     </section>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
