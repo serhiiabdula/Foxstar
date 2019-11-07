@@ -6,8 +6,7 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    &-primary {
-        @extend .btn;
+    &.btn-primary {
         background-color: $color-brand-primary;
     }
     &-secondary {
