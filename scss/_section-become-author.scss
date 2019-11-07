@@ -4,7 +4,6 @@
 }
 .external-container {
     background-color: #b5b5b5;
-    // padding: 130px 33px 137px 33px;
     box-shadow: 1px 1px 30px #b5b5b5;
 }
 .wrapper-inner-container {
@@ -17,6 +16,8 @@
     text-align: center;
     padding: 71px 59px 82px 59px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 .text-inner-container {
     width: 50%;
@@ -26,7 +27,4 @@
     span {
         font-weight: 700;
     }
-}
-.button-inner-container {
-    vertical-align: middle;
 }

@@ -14,13 +14,13 @@
         @extend .btn;
         background-color: $color-brand-secondary;
     }
-}
-.btn-alternative {
-    font-size: 1.067rem;
-    line-height: 4rem;
-    color: $color-btn_font-secondary;
-    background-color: $color-btn_font-primary;
-    letter-spacing: 1px;
-    padding: 20px 30px;
-    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    &-alternative {
+        font-size: 1.067rem;
+        line-height: 4rem;
+        color: $color-btn_font-secondary;
+        background-color: $color-btn_font-primary;
+        letter-spacing: 1px;
+        padding: 20px 30px;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    }
 }
