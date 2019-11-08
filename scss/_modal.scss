@@ -1,0 +1,97 @@
+.modal-dialog {
+    max-width: 729px;
+    max-height: 484px;
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4);
+    .modal-content {
+        background-color: $color-brand-primary;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+    }
+}
+.modal-header {
+    border-bottom: none;
+    padding: 21px 28px 40px 0;
+    .close {
+        color: #fff;
+        padding: 0;
+    }
+}
+.modal-body {
+    padding: 0;
+    .modal-title {
+       font-size: 48px;
+       text-align: center;
+       font-family: 'Roboto', sans-serif;
+       font-weight: 700;
+       padding: 0 0 23px 0;
+    }
+    .modal-form {
+        padding: 0 162px;
+        input {
+            background-color: #76ae36;
+            color: #fff;
+            border: none;
+            width: 400px;
+            height: 43px;
+            padding-left: 40px;
+        }
+        input::placeholder {
+            color: #fff;
+        }
+    }
+}
+.modal-form-login {
+    position: relative;
+    padding-bottom: 8px;
+    i { 
+        position: absolute;
+        left: 18px; 
+        top: 10px;      
+    }
+}
+.modal-footer {
+    display: flex;
+    justify-content: flex-start;
+    border-top: none;
+    padding: 11px 162px 23px 162px;
+}
+.modal-footer > :not(:first-child) {
+    margin-left: 0; 
+}
+  .modal-footer > :not(:last-child) {
+    margin-right: 10px; 
+}
+
+.btn-submit {
+    // width: 33%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    font-size: 14px;
+    width: 139px;
+    height: 48px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.btn-create {
+    // width: 66%;
+    background-color: #76ae36;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+}
+.modal-lost {
+    padding: 0 162px 111px 162px;
+    a {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+.fa-user:before {content: "\f007";}
+.fa-lock:before {content: "\f023";}
+.fa-edit:before {content: "\f044";}
