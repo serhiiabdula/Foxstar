@@ -9312,13 +9312,29 @@ h6 {
   .nav-right-call a {
     color: #546e7a; }
 
+.dropdown {
+  padding-right: 15px; }
+
 .nav-right-notice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-right: 26px; }
   .nav-right-notice i {
     color: #a0a0a0; }
 
+.fa-bell::before {
+  content: "\f0f3"; }
+
 .fa-shopping-cart::before {
   content: "\f07a"; }
+
+.fa-envelope::before {
+  content: "\f0e0"; }
+
+.fa-reply::before {
+  content: "\f3e5"; }
 
 .dropdown-menu {
   width: 268px;
@@ -9327,14 +9343,47 @@ h6 {
   .dropdown-menu a {
     padding: 0; }
 
-.card-shop {
+.card-notice {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   border: 1px solid #e0e0e0;
   border-bottom: none; }
+
+.card-massage-img {
+  padding: 20px; }
+  .card-massage-img img {
+    width: 48px;
+    height: 48px; }
+
+.card-massage-text {
+  padding: 23px 0; }
+  .card-massage-text h4 {
+    color: #000;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; }
+  .card-massage-text p {
+    color: #84b743;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; }
+  .card-massage-text span {
+    color: #707070;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; }
+
+.card-massage-icon {
+  padding: 27px 29px 50px 35px; }
+  .card-massage-icon .icon-color {
+    color: #ef6c00; }
 
 .card-shop-img {
   padding: 23px; }
