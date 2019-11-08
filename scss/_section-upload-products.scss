@@ -68,9 +68,28 @@
     border: 1px solid #ddd;
     border-radius: 0;
 }
+.jq-selectbox__select {
+    width: 100%;
+    height: 40px;
+    padding: 12px 0px 14px 17px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    font: 1rem/1 pt_sansregular, sans-serif;
+    color: #707070;
+    background: #f4f6f5;
+    box-shadow: none;
+    text-shadow: none;
+}
+.jq-selectbox__select-text {
+    font: 1rem/1 pt_sansregular, sans-serif;
+}
+.jq-selectbox li.selected {
+    background-color: $color-brand-primary;
+}
+.jq-selectbox__trigger {
+    border-left: none;
+}
 .btn-primary {
-    // background-color: #8bc34a;
-    // color: $color-btn_font-primary;
     font-size: 1rem;
     padding: 16px 40px 19px 35px;
     line-height: 1;
@@ -82,8 +101,29 @@
     line-height: 1.5;
     color: $color-form-text-input;
     border-radius: 0;
+    border: none;
     background-color: $color-background-secondary;
+    padding: 0;
+    &:focus {
+        border-color: none;
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.jq-selectbox__dropdown {
+    border: 1px solid #ddd;
+    border-radius: none;
+    font: 1rem/1 pt_sansregular, sans-serif;
+}
+.jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid $color-brand-primary;
+}
+.jq-selectbox li:hover {
+    background-color: $color-brand-primary;
 }
 .custom-file-label {
     border-radius: 0;
+}
+.col-10 input:hover {
+    background: linear-gradient(#FFF, #E6E6E6);
 }

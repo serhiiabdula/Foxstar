@@ -1,3 +1,5 @@
+@import url(../node_modules/jquery-form-styler/dist/jquery.formstyler.css);
+@import url(../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css);
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10363,6 +10365,28 @@ footer a:hover {
   border: 1px solid #ddd;
   border-radius: 0; }
 
+.jq-selectbox__select {
+  width: 100%;
+  height: 40px;
+  padding: 12px 0px 14px 17px;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  font: 1rem/1 pt_sansregular, sans-serif;
+  color: #707070;
+  background: #f4f6f5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+
+.jq-selectbox__select-text {
+  font: 1rem/1 pt_sansregular, sans-serif; }
+
+.jq-selectbox li.selected {
+  background-color: #8bc34a; }
+
+.jq-selectbox__trigger {
+  border-left: none; }
+
 .btn-primary {
   font-size: 1rem;
   padding: 16px 40px 19px 35px;
@@ -10375,10 +10399,33 @@ footer a:hover {
   line-height: 1.5;
   color: #707070;
   border-radius: 0;
-  background-color: #f4f6f5; }
+  border: none;
+  background-color: #f4f6f5;
+  padding: 0; }
+  .custom-select:focus {
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.jq-selectbox__dropdown {
+  border: 1px solid #ddd;
+  border-radius: none;
+  font: 1rem/1 pt_sansregular, sans-serif; }
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: 1px solid #8bc34a; }
+
+.jq-selectbox li:hover {
+  background-color: #8bc34a; }
 
 .custom-file-label {
   border-radius: 0; }
+
+.col-10 input:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
+  background: -o-linear-gradient(#FFF, #E6E6E6);
+  background: linear-gradient(#FFF, #E6E6E6); }
 
 .hero_upload {
   padding: 60px 0 60px 0;
