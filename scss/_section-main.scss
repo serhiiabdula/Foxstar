@@ -126,7 +126,7 @@
     background-color: transparent;
     font-size: 15px;
     line-height: 8;
-    padding: 1px 23px;
+    padding: 0 23px;
     &:before {
       content: '$';
       position: absolute;
@@ -212,13 +212,7 @@
 
 
   }
-.card-top-ten {
 
-  background-color: #ffffff;
-  padding: 0 30px 30px 30px;
-  border: 2px #dedede solid;
-
-}
 .pr-0{
   padding-left: 0;
 }
@@ -227,6 +221,10 @@
   border-top: 2px #dedede solid;
 }
 .card-top-ten {
+  background-color: #ffffff;
+  padding: 0 30px 30px 30px;
+  border: 2px #dedede solid;
+
   .card {
     border: none;
 
@@ -240,8 +238,11 @@
     .bottompart {
       border-top: none;
       padding: 0;
-    }
 
+      &:not(:last-child) {
+        border-bottom: 2px #dedede solid;
+      }
+    }
 
   }
 
@@ -316,6 +317,9 @@
      margin-right: 3px;
      padding: 7px 18px;
      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);;
+   }
+   .card-top {
+      border-bottom: 2px #dedede solid;
    }
 
 

@@ -3505,6 +3505,7 @@ input[type="button"].btn-block {
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
@@ -3512,6 +3513,7 @@ input[type="button"].btn-block {
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-webkit-slider-thumb {
         -webkit-transition: none;
+        -o-transition: none;
         transition: none; } }
     .custom-range::-webkit-slider-thumb:active {
       background-color: #b3d7ff; }
@@ -3529,13 +3531,17 @@ input[type="button"].btn-block {
     background-color: #007bff;
     border: 0;
     border-radius: 1rem;
-    -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
          appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-moz-range-thumb {
-        -moz-transition: none;
+        -webkit-transition: none;
+        -o-transition: none;
         transition: none; } }
     .custom-range::-moz-range-thumb:active {
       background-color: #b3d7ff; }
@@ -3556,12 +3562,16 @@ input[type="button"].btn-block {
     background-color: #007bff;
     border: 0;
     border-radius: 1rem;
-    -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-ms-thumb {
-        -ms-transition: none;
+        -webkit-transition: none;
+        -o-transition: none;
         transition: none; } }
     .custom-range::-ms-thumb:active {
       background-color: #b3d7ff; }
@@ -10143,7 +10153,7 @@ footer a:hover {
   background-color: transparent;
   font-size: 15px;
   line-height: 8;
-  padding: 1px 23px; }
+  padding: 0 23px; }
   .irs--flat .irs-from:before {
     content: '$';
     position: absolute;
@@ -10204,11 +10214,6 @@ footer a:hover {
     left: 50px;
     top: 20px; }
 
-.card-top-ten {
-  background-color: #ffffff;
-  padding: 0 30px 30px 30px;
-  border: 2px #dedede solid; }
-
 .pr-0 {
   padding-left: 0; }
 
@@ -10216,16 +10221,22 @@ footer a:hover {
   padding-top: 26px;
   border-top: 2px #dedede solid; }
 
-.card-top-ten .card {
-  border: none; }
-  .card-top-ten .card:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .card-top-ten .card .card-inf {
-    padding: 20px 0; }
-  .card-top-ten .card .bottompart {
-    border-top: none;
-    padding: 0; }
+.card-top-ten {
+  background-color: #ffffff;
+  padding: 0 30px 30px 30px;
+  border: 2px #dedede solid; }
+  .card-top-ten .card {
+    border: none; }
+    .card-top-ten .card:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .card-top-ten .card .card-inf {
+      padding: 20px 0; }
+    .card-top-ten .card .bottompart {
+      border-top: none;
+      padding: 0; }
+      .card-top-ten .card .bottompart:not(:last-child) {
+        border-bottom: 2px #dedede solid; }
 
 .stars-mini {
   position: relative;
@@ -10279,6 +10290,9 @@ footer a:hover {
   padding: 7px 18px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+
+.card-top {
+  border-bottom: 2px #dedede solid; }
 
 .section-upload-products {
   background-color: #f4f6f5;
@@ -10512,3 +10526,42 @@ footer a:hover {
 
 .fa-edit:before {
   content: "\f044"; }
+
+.hero_product {
+  padding: 60px 0 60px 0;
+  background: url("../img/background-foxtar-second.jpg") no-repeat;
+  text-align: center; }
+
+.product_hero-descript {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 25px; }
+
+.product_search {
+  font-family: Roboto;
+  font-size: 14px;
+  border: transparent;
+  color: #90a4ae;
+  margin-right: 426px; }
+
+.product_hero-search {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: transparent;
+  display: inline-block;
+  padding: 23px 23px;
+  -webkit-box-shadow: 0px 1px 15px 0px #899051;
+          box-shadow: 0px 1px 15px 0px #899051; }
+
+.product_searchButton {
+  position: absolute;
+  background: url("../img/icon-hero.png") no-repeat;
+  border: transparent;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 25px; }

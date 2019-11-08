@@ -1,9 +1,12 @@
 /*
 * isotope init begin
 */
-var $grid = $('.grid').isotope({
-    // options
-});
+if($('.grid').length){
+    var $grid = $('.grid').isotope({
+        // options
+    });
+}
+
 // filter items on button click
 $('.filter-button-group').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
@@ -46,10 +49,12 @@ for (var i = 0; i < $('#recipeCarousel .carousel-item').length; i++) {
 html += '</ol>';
 $("#recipeCarousel").append(html);
 
+if($('#recipeCarousel').length){
+    $('#recipeCarousel').carousel({
+        interval: 10000
+    })
+}
 
-$('#recipeCarousel').carousel({
-    interval: 10000
-})
 
 $('.carousel .carousel-item').each(function(){
     var next = $(this).next();
@@ -75,7 +80,7 @@ $("#recipeCarousel .carousel-indicators li").on('click', function(){
     $("#recipeCarousel").carousel($(this).data('number'));
 });
 
-
+$(".js-range-slider").ionRangeSlider();
 
 
 //console.log(html);
