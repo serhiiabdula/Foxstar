@@ -88,5 +88,8 @@ if ($(".js-range-slider").length){
 
 // adding input and select for forms
 if ($('input, select').length){
-    $('input, select').styler();
+    $('input, select').styler({
+        filePlaceholder: 'No File Chosen',
+        fileBrowse: 'Choose File'
+    });
 }

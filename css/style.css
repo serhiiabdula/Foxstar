@@ -8993,7 +8993,9 @@ h6 {
   .title-footer:before {
     top: 130px; }
   .card-text p {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .upload_search {
+    margin-right: 42.6px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
@@ -10314,7 +10316,7 @@ footer a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 48px 0 39px 0;
+  padding: 48px 0 39px 30px;
   letter-spacing: 1px; }
   .local-menu li span {
     color: #8bc34a;
@@ -10334,11 +10336,6 @@ footer a:hover {
   width: 100%; }
 
 .col-form-label {
-  /* padding-top: -webkit-calc(0.375rem + 1px); */
-  /* padding-top: calc(0.375rem + 1px); */
-  /* padding-bottom: -webkit-calc(0.375rem + 1px); */
-  /* padding-bottom: calc(0.375rem + 1px); */
-  /* margin-bottom: 0; */
   font-size: inherit;
   line-height: 1.5;
   color: #444;
@@ -10364,6 +10361,12 @@ footer a:hover {
   background-color: #f4f6f5;
   border: 1px solid #ddd;
   border-radius: 0; }
+  .form-control:focus {
+    color: #707070;
+    border-color: #ddd;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #f4f6f5; }
 
 .jq-selectbox__select {
   width: 100%;
@@ -10426,6 +10429,48 @@ footer a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
   background: -o-linear-gradient(#FFF, #E6E6E6);
   background: linear-gradient(#FFF, #E6E6E6); }
+
+.jq-file {
+  width: 100%;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.jq-file__name {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  background-color: #f4f6f5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #707070;
+  font: 1rem/1 pt_sansregular, sans-serif;
+  height: 40px;
+  padding: 10px 80px 0 130px; }
+
+.jq-file__browse {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font: 1rem/1 pt_sansregular, sans-serif;
+  color: #707070;
+  padding: 4px 12px 9px 14px;
+  text-shadow: none;
+  top: 7px;
+  left: 7px;
+  bottom: 7px;
+  right: auto; }
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #8bc34a;
+  background-color: #fff;
+  border-color: #8bc34a;
+  border: 1px solid #8bc34a; }
+
+.submit-wrapper {
+  margin: 42px 0 0 0; }
 
 .hero_upload {
   padding: 60px 0 60px 0;

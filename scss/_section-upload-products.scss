@@ -14,7 +14,7 @@
 }
 .local-menu {
     display: flex;
-    padding: 48px 0 39px 0;
+    padding: 48px 0 39px 30px;
     letter-spacing: 1px;
     li span {
         color: $color-brand-primary;
@@ -37,11 +37,6 @@
     width: 100%;
 }
 .col-form-label {
-    /* padding-top: -webkit-calc(0.375rem + 1px); */
-    /* padding-top: calc(0.375rem + 1px); */
-    /* padding-bottom: -webkit-calc(0.375rem + 1px); */
-    /* padding-bottom: calc(0.375rem + 1px); */
-    /* margin-bottom: 0; */
     font-size: inherit;
     line-height: 1.5;
     color: $color-form-text-main;
@@ -67,6 +62,12 @@
     background-color: $color-background-secondary;
     border: 1px solid #ddd;
     border-radius: 0;
+    &:focus {
+        color: $color-form-text-input;
+        border-color: #ddd;
+        box-shadow: none;
+        background-color: $color-background-secondary;
+    }
 }
 .jq-selectbox__select {
     width: 100%;
@@ -126,4 +127,42 @@
 }
 .col-10 input:hover {
     background: linear-gradient(#FFF, #E6E6E6);
+}
+.jq-file {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+.jq-file__name {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    background-color: $color-background-secondary;
+    box-shadow: none;
+    color: $color-form-text-input;
+    font: 1rem/1 pt_sansregular, sans-serif;
+    height: 40px;
+    padding: 10px 80px 0 130px;
+}
+.jq-file__browse {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    background: $color-background-default;
+    box-shadow: none;
+    font: 1rem/1 pt_sansregular, sans-serif;
+    color: $color-form-text-input;
+    padding: 4px 12px 9px 14px;
+    text-shadow: none;
+    top: 7px;
+    left: 7px;
+    bottom: 7px;
+    right: auto;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #8bc34a;
+    background-color: #fff;
+    border-color: #8bc34a;
+    border: 1px solid #8bc34a;
+}
+.submit-wrapper {
+    margin: 42px 0 0 0;
 }
