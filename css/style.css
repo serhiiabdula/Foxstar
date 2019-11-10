@@ -10039,8 +10039,8 @@ footer a:hover {
   border: transparent;
   display: inline-block;
   padding: 23px 23px;
-  -webkit-box-shadow: 0px 1px 15px 0px #899051;
-          box-shadow: 0px 1px 15px 0px #899051; }
+  -webkit-box-shadow: 0px 1px 15px 0px #6f6f6f;
+          box-shadow: 0px 1px 15px 0px #6f6f6f; }
 
 .all_searchButton {
   position: absolute;
@@ -10554,8 +10554,8 @@ footer a:hover {
   border: transparent;
   display: inline-block;
   padding: 23px 23px;
-  -webkit-box-shadow: 0px 1px 15px 0px #899051;
-          box-shadow: 0px 1px 15px 0px #899051; }
+  -webkit-box-shadow: 0px 1px 15px 0px #6f6f6e;
+          box-shadow: 0px 1px 15px 0px #6f6f6e; }
 
 .product_searchButton {
   position: absolute;
@@ -10565,3 +10565,121 @@ footer a:hover {
   height: 25px;
   top: 20px;
   right: 25px; }
+
+.section-builder {
+  background-color: #f4f6f5; }
+
+.row-builder {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.img-bg {
+  background-color: #ffffff;
+  border: 2px #dedede solid; }
+
+.img-builder {
+  width: 100%;
+  border: 20px solid #ffffff; }
+
+.builder-title {
+  letter-spacing: 2px;
+  padding: 5px 0;
+  font-weight: 500; }
+
+.builder-descript {
+  color: #707070; }
+
+.builder-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.btn-group-rgb button {
+  margin-right: 20px;
+  padding: 20px 25px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Roboto; }
+
+.btn-group-rgb .btn-preview {
+  background-color: #e74c3c; }
+
+.btn-group-rgb .btn-screen {
+  background-color: #455a64; }
+
+.btn-group-rgb .btn-doc {
+  background-color: #8bc34a; }
+
+.social-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .social-buttons li {
+    padding-left: 3px; }
+    .social-buttons li a {
+      height: 50px;
+      width: 54px;
+      display: block; }
+      .social-buttons li a:hover {
+        -webkit-box-shadow: 0px 1px 5px 0px #6f6f6f;
+                box-shadow: 0px 1px 5px 0px #6f6f6f; }
+
+.fb {
+  background: url(../img/social-fb.png) no-repeat; }
+
+.twitter {
+  background: url(../img/social-twitter.png) no-repeat; }
+
+.linkedin {
+  background: url(../img/social-linkidin.png) no-repeat; }
+
+.pinterest {
+  background: url(../img/social-pinterest.png) no-repeat; }
+
+.sec-cerv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.nav-pills .nav-link {
+  background: #fff;
+  border: 1px #dedede solid;
+  border-radius: 0;
+  font-size: 16px;
+  color: #70838d;
+  padding: 23px 68.5px; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border-bottom: 4px #8bc34a solid;
+  color: #70838d;
+  padding-bottom: 20px; }
+
+.tab-pane {
+  background-color: #fff;
+  border: 1px #dedede solid;
+  padding: 35px; }
+  .tab-pane p {
+    color: #70838d;
+    font-size: 16px;
+    line-height: 3; }
+    .tab-pane p:before {
+      content: ">";
+      color: #8bc34a;
+      font-weight: 900;
+      padding-right: 10px; }
+
+.tabs {
+  padding-top: 55px; }
