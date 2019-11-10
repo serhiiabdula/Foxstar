@@ -86,6 +86,14 @@ if ($(".js-range-slider").length){
 
 //console.log(html);
 
+//tabs square and list
+$('.list-view').on('click', function(){
+    $('.list-view').parents('.section').addClass('card-list');
+});
+$('.square-view').on('click', function(){
+    $('.square-view').parents('.section').removeClass('card-list');
+});
+
 // adding input and select for forms
 if ($('input, select').length){
     $('input, select').styler({

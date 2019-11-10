@@ -36,8 +36,41 @@
   height: 25px;
   top: 20px;
   right: 25px;
-
-
 }
+.square {
+    border: none;
+    background: none;
+    margin-right: 14px;
+    &:hover {
+      color: $color-brand-primary;
+    }
+    &:focus {
+      color: $color-brand-primary;
+    }
+}
+.list {
+    border: none;
+    background: none;
+    &:hover {
+      color: $color-brand-primary;
+    }
+    &:focus {
+      color: $color-brand-primary;
+    }
+}
+.card-list {
+    display: flex;
+    flex-direction: row;    
+}
+// .card-list .img-listing {
+//   flex: 2;
+// }
+.card-img {
+  flex: 7;
+}
+.card-mini .card-inf {
+  flex: 7;
+}
+
 
 

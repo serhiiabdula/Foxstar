@@ -8807,6 +8807,16 @@ img {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+.fa-th-large:before {
+  content: '\f009';
+  color: #90a4ae; }
+  .fa-th-large:before:hover {
+    color: #8bc34a; }
+
+.fa-th-list:before {
+  content: '\f00b';
+  color: #90a4ae; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: inherit, sans-serif;
@@ -10055,6 +10065,46 @@ footer a:hover {
   height: 25px;
   top: 20px;
   right: 25px; }
+
+.square {
+  border: none;
+  background: none;
+  margin-right: 14px; }
+  .square:hover {
+    color: #8bc34a; }
+  .square:focus {
+    color: #8bc34a; }
+
+.list {
+  border: none;
+  background: none; }
+  .list:hover {
+    color: #8bc34a; }
+  .list:focus {
+    color: #8bc34a; }
+
+.card-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.card-img {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+      -ms-flex: 7;
+          flex: 7; }
+
+.card-mini .card-inf {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+      -ms-flex: 7;
+          flex: 7; }
 
 .section-main {
   background-color: #f4f6f5; }
