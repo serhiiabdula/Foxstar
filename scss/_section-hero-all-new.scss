@@ -40,7 +40,8 @@
 .square {
     border: none;
     background: none;
-    margin-right: 14px;
+    margin-right: 5px;
+    padding: 0 5px;
     &:hover {
       color: $color-brand-primary;
     }
@@ -51,6 +52,7 @@
 .list {
     border: none;
     background: none;
+    padding: 0 5px;
     &:hover {
       color: $color-brand-primary;
     }
@@ -62,9 +64,6 @@
     display: flex;
     flex-direction: row;    
 }
-// .card-list .img-listing {
-//   flex: 2;
-// }
 .card-img {
   flex: 7;
 }
