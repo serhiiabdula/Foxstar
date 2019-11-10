@@ -1,7 +1,7 @@
 /*
 * isotope init begin
 */
-if($('.grid').length){
+if ($('.grid').length){
     var $grid = $('.grid').isotope({
         // options
     });
@@ -80,7 +80,16 @@ $("#recipeCarousel .carousel-indicators li").on('click', function(){
     $("#recipeCarousel").carousel($(this).data('number'));
 });
 
-$(".js-range-slider").ionRangeSlider();
-
+if ($(".js-range-slider").length){
+    $(".js-range-slider").ionRangeSlider();
+}
 
 //console.log(html);
+
+// adding input and select for forms
+if ($('input, select').length){
+    $('input, select').styler({
+        filePlaceholder: 'No File Chosen',
+        fileBrowse: 'Choose File'
+    });
+}
