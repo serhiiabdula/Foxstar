@@ -36,8 +36,40 @@
   height: 25px;
   top: 20px;
   right: 25px;
-
-
 }
+.square {
+    border: none;
+    background: none;
+    margin-right: 5px;
+    padding: 0 5px;
+    &:hover {
+      color: $color-brand-primary;
+    }
+    &:focus {
+      color: $color-brand-primary;
+    }
+}
+.list {
+    border: none;
+    background: none;
+    padding: 0 5px;
+    &:hover {
+      color: $color-brand-primary;
+    }
+    &:focus {
+      color: $color-brand-primary;
+    }
+}
+.card-list {
+    display: flex;
+    flex-direction: row;    
+}
+.card-img {
+  flex: 7;
+}
+.card-mini .card-inf {
+  flex: 7;
+}
+
 
 
