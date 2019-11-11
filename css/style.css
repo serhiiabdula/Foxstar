@@ -9287,7 +9287,7 @@ h6 {
   max-width: 100%; }
 
 .header-top {
-  padding: 27px 0 17px 0;
+  height: 82px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9296,12 +9296,21 @@ h6 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .header-top .nav-right {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
     .header-top .nav-right .nav-right-call {
       line-height: 38px; }
 
@@ -9320,7 +9329,8 @@ h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 26px; }
+  padding-right: 26px;
+  height: 100%; }
   .nav-right-notice i {
     color: #a0a0a0; }
 
@@ -9441,14 +9451,22 @@ h6 {
     font-weight: 700;
     font-size: 14px; }
 
+.dropdown-toggle {
+  height: 100%; }
+
+.dropdown-toggle::after {
+  display: none; }
+
 .btn-icon {
   background-color: #f5f5f5;
   height: 34px;
   width: 34px;
   border-radius: 100%;
   border: none; }
-  .btn-icon:after {
-    display: none; }
+
+button {
+  border: none;
+  background-color: transparent; }
 
 .nav-right-actions .btn, .nav-right-actions .btn-secondary, .total-button .btn, .total-button .btn-secondary {
   padding: 4px 20px;
@@ -10407,14 +10425,14 @@ footer a:hover {
 
 .modal-dialog {
   max-width: 729px;
-  max-height: 484px;
-  -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4); }
+  max-height: 484px; }
   .modal-dialog .modal-content {
     background-color: #8bc34a;
     color: #fff;
     border: none;
-    border-radius: 0; }
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4); }
 
 .modal-header {
   border-bottom: none;

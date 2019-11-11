@@ -1,12 +1,12 @@
 .modal-dialog {
     max-width: 729px;
     max-height: 484px;
-    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4);
     .modal-content {
         background-color: $color-brand-primary;
         color: #fff;
         border: none;
         border-radius: 0;
+        box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4);
     }
 }
 .modal-header {
