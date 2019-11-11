@@ -1,16 +1,17 @@
 .btn {
-    font-size: 0.8rem;
-    color: $color-btn_font-primary;
+    font-size: 0.8rem;    
     border-radius: 4px;
     line-height: 1.6rem;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     &.btn-primary {
+        color: $color-btn_font-primary;
         background-color: $color-brand-primary;
     }
     &-secondary {
         @extend .btn;
+        color: $color-btn_font-primary;
         background-color: $color-brand-secondary;
     }
     &-alternative {

@@ -1,9 +1,12 @@
 /*
 * isotope init begin
 */
-var $grid = $('.grid').isotope({
-    // options
-});
+if ($('.grid').length){
+    var $grid = $('.grid').isotope({
+        // options
+    });
+}
+
 // filter items on button click
 $('.filter-button-group').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
@@ -46,10 +49,12 @@ for (var i = 0; i < $('#recipeCarousel .carousel-item').length; i++) {
 html += '</ol>';
 $("#recipeCarousel").append(html);
 
+if($('#recipeCarousel').length){
+    $('#recipeCarousel').carousel({
+        interval: 10000
+    })
+}
 
-$('#recipeCarousel').carousel({
-    interval: 10000
-})
 
 $('.carousel .carousel-item').each(function(){
     var next = $(this).next();
@@ -75,7 +80,24 @@ $("#recipeCarousel .carousel-indicators li").on('click', function(){
     $("#recipeCarousel").carousel($(this).data('number'));
 });
 
-
-
+if ($(".js-range-slider").length){
+    $(".js-range-slider").ionRangeSlider();
+}
 
 //console.log(html);
+
+//tabs square and list
+$('.list').on('click', function(){
+    $('.list').parents('.section').addClass('list-view');
+});
+$('.square').on('click', function(){
+    $('.square').parents('.section').removeClass('list-view');
+});
+
+// adding input and select for forms
+if ($('select').length) {
+    $('input, select').styler({
+        filePlaceholder: 'No File Chosen',
+        fileBrowse: 'Choose File'
+    });
+}

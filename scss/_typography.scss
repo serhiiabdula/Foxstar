@@ -120,6 +120,17 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 900; 
 }
+.fa-th-large:before {
+    content: '\f009';
+    color: #90a4ae;
+    &:hover {
+        color: $color-brand-primary;
+    }
+}
+.fa-th-list:before {
+    content: '\f00b';
+    color: #90a4ae;
+}
 
 // HEADERS style
 h1, h2, h3, h4, h5, h6 {

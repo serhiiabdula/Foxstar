@@ -1,3 +1,5 @@
+@import '../node_modules/jquery-form-styler/dist/jquery.formstyler.css';
+@import '../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'reset';
 @import 'typography';
@@ -18,3 +20,6 @@
 @import 'section-upload-products';
 @import "section-hero-upload";
 @import "modal";
+@import "section_hero_product";
+@import "section-builder";
+@import "more-product";
