@@ -86,8 +86,16 @@ if ($(".js-range-slider").length){
 
 //console.log(html);
 
+//tabs square and list
+$('.list').on('click', function(){
+    $('.list').parents('.section').addClass('list-view');
+});
+$('.square').on('click', function(){
+    $('.square').parents('.section').removeClass('list-view');
+});
+
 // adding input and select for forms
-if ($('input, select').length){
+if ($('input, select').length) {
     $('input, select').styler({
         filePlaceholder: 'No File Chosen',
         fileBrowse: 'Choose File'
