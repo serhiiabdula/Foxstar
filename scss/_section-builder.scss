@@ -128,5 +128,45 @@
   padding-top: 55px;
 }
 
+// Right sidebar in All products section - start
+.sidebar-item-wrapper {
+  display: flex;
+}
+.sidebar-item {
+    background-color: $color-background-default;
+    border: 1px solid #dedede;
+}
+.sidebar-item-inner {
+    padding: 20px 30px 25px 30px;
+}
+.sidebar-item-title {
+    font-size: 1.333rem;
+    color: $header-color-alternative;
+    line-height: 1;
+}
+.sidebar-item-title::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #dde3e8;
+}
+.sidebar-form-wrapper span {
+    font-size: 1.467rem;
+    color: $color-brand-secondary;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.sidebar-form-wrapper {
+}
+.author-badge {
+    text-align: center;
+    li {
+        display: inline-block;
+  }
+}
+.fa-shopping-cart::before {
+    content:'\f07a';
+    color: #a6b5bb;
+}
 
 
