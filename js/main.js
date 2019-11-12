@@ -95,7 +95,7 @@ $('.square').on('click', function(){
 });
 
 // adding input and select for forms
-if ($('input, select').length) {
+if ($('select').length) {
     $('input, select').styler({
         filePlaceholder: 'No File Chosen',
         fileBrowse: 'Choose File'
