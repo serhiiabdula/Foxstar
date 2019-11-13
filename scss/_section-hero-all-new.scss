@@ -17,7 +17,20 @@
   border: transparent;
   color: #90a4ae;
   margin-right: 426px;
+  @media(max-width:1190px){
+    margin-right: 410px;
+  }
+  @media(max-width: 991px){
+    margin-right: 350px;
+  }
+  @media(max-width:768px){
+    margin-right: 330px;
+  }
+  @media(max-width:375px){
+    margin-right: 143px;
+  }
 }
+
 .all_hero-search {
   position: relative;
   background-color: #ffffff;
@@ -27,6 +40,16 @@
   padding: 23px 23px;
 
   box-shadow: 0px 1px 15px 0px rgba(111, 111, 111, 1);
+  @media(max-width:991px){
+    padding: 20px 23px;
+  }
+
+  @media(max-width:768px){
+    padding: 19px 23px;
+  }
+  @media(max-width:375px){
+    padding: 15px 15px;
+  }
 }
 .all_searchButton {
   position: absolute;
@@ -36,6 +59,14 @@
   height: 25px;
   top: 20px;
   right: 25px;
+  @media(max-width:768px){
+    top: 18px;
+    right: 19px;
+  }
+  @media(max-width:375px){
+    top: 13px;
+    right: 15px;
+  }
 }
 .square {
     border: none;

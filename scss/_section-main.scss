@@ -1,12 +1,50 @@
 .section-main {
   background-color: #f4f6f5;
 }
+.row-sm {
+  margin-left: 0;
+  margin-right: -15px;
+  @media(max-width: 1190px){
+    margin-left: 0;
+    margin-right: -10px;
+
+  }
+}
 .row_main {
   display: flex;
+
 }
 
 
   .card-mini {
+    .card-inf {
+      padding: 23px 26px;
+      @media(max-width:1190px){
+        padding: 20px 10px;
+      }
+      @media(max-width:991px){
+        padding: 20px 10px;
+      }
+    }
+    .bottompart {
+      padding: 16px 23px;
+      @media(max-width:1190px){
+        padding: 20px 10px;
+        display: flex;
+      }
+      @media(max-width:991px){
+        padding:10px;
+        display: block;
+      }
+      @media (max-width: 768px) {
+        padding:5px;
+
+      }
+      @media(max-width: 375px){
+        display: flex;
+        padding: 20px 30px;
+      }
+    }
     .author {
       .author-descript {
         font-size: 12px;
@@ -14,16 +52,14 @@
         padding-left: 5px;
       }
     }
-.rating {
-  .rating-discrip {
-    font-size: 12px;
-    line-height: 2.5;
-    padding-left: 5px;
-  }
-}
-    .card-inf {
-      padding: 23px 26px;
+  .rating {
+    .rating-discrip {
+      font-size: 12px;
+      line-height: 2.5;
+      padding-left: 5px;
+      }
     }
+
 
     .card-title {
       font-size: 16px;
@@ -42,9 +78,7 @@
 
 
 
-    .bottompart {
-      padding: 16px 23px;
-    }
+
   }
 
 
@@ -54,6 +88,10 @@
 .categories-title {
 
   color: #000000;
+  @media(max-width: 991px){
+    line-height: 3rem;
+    font-size: 18px;
+  }
 }
 
 .card-categories {
@@ -61,11 +99,24 @@
   padding: 0 30px 40px 30px;
   background-color: #ffffff;
   border: 2px #dedede solid;
+  @media(max-width: 1190px){
+    padding: 0 15px 15px 15px;
+  }
+  @media(max-width: 991px){
+    padding: 0 10px 10px 10px;
+
+
+
+  }
 
 
   .main-categories{
     border-top: 2px #dedede solid;
     padding-top: 30px;
+    @media(max-width: 991px){
+      padding-top: 10px;
+    }
+
 
     li {
       display: flex;
@@ -77,10 +128,21 @@
         color: #8bc34a;
         font-weight: 900;
         padding-right: 10px;
+          @media(max-width: 991px){
+            font-size: 13px;
+
+          }
+      }
+      .name-category{
+        @media(max-width: 991px) {
+          font-size: 13px;
+        }
       }
       .price-category {
         color:#506e7a;
-
+        @media(max-width: 991px){
+          font-size: 12px;
+        }
 
       }
 
@@ -94,6 +156,12 @@
   padding:0 30px 30px 30px;
   margin-bottom: 30px;
   border: 2px #dedede solid;
+  @media(max-width: 1190px){
+    padding:0 15px 15px 15px;
+  }
+  @media(max-width: 991px){
+    padding:0 10px 10px 10px;
+  }
 
 
 }
@@ -196,6 +264,14 @@
   padding: 15px 60px 15px 80px;
   margin-top: 30px;
   width: 100%;
+  @media(max-width: 1190px){
+  padding: 15px 60px 15px 69px;
+  margin-top: 10px;
+}
+  @media(max-width: 991px){
+    padding: 15px 60px 15px 45px;
+    margin-top: 10px;
+  }
 
 
   &:before {
@@ -206,6 +282,12 @@
     height: 18px;
     left: 50px;
     top: 20px;
+    @media(max-width: 1190px){
+      left: 44px;
+    }
+    @media(max-width: 991px){
+      left: 19px;
+    }
   }
 
 
@@ -222,17 +304,22 @@
   background-color: #ffffff;
   padding: 0 30px 30px 30px;
   border: 2px #dedede solid;
+  @media(max-width: 1190px) {
+    padding: 0 10px 10px 10px;
+  }
 
   .card {
     border: none;
 
-    &:hover{
+    &:hover {
       box-shadow: none;
     }
-    .card-inf{
+
+    .card-inf {
       padding: 20px 0;
 
     }
+
     .bottompart {
       border-top: none;
       padding: 0;
@@ -244,9 +331,9 @@
 
   }
 
-
-
 }
+
+
 .stars-mini {
   position: relative;
   display: block;
