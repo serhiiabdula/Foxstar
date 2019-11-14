@@ -1,6 +1,5 @@
-.section-builder{
+.section.section-builder{
   background-color: #f4f6f5;
-
 }
 .row-builder {
   display: flex;
@@ -126,6 +125,125 @@
 }
 .tabs {
   padding-top: 55px;
+}
+
+// Right sidebar in All products section - start
+.sidebar-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar-item {
+    background-color: $color-background-default;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+}
+.sidebar-item-inner {
+    padding: 20px 30px 25px 30px;
+}
+.sidebar-item-title {
+    font-size: 1.333rem;
+    color: $header-color-alternative;
+    line-height: 1;
+}
+hr {
+  background-color: #dde3e8;
+  margin: 25px 0;
+}
+.sidebar-form-wrapper span {
+    font-size: 1.467rem;
+    font-weight: 500;
+    color: $color-brand-secondary;
+    text-align: left;
+    line-height: 40px;
+}
+.sidebar-form-wrapper {
+  display: flex;
+}
+.author-badge {
+    text-align: center;
+    li {
+    display: inline-block;
+  }
+}
+.sidebar-form-wrapper .jq-selectbox__select-text {
+  width: 82px;
+}
+.sales-line {
+    display: flex;
+    span {
+      padding-left: 20px;
+    }
+    h3 {
+      padding-left: 20px;
+    }
+}
+.sidebar-btn li {
+  display: block;
+    text-align: center;
+    color: $color-background-default;
+    font-size: 1.067rem;
+    margin-bottom: 7px;
+    padding: 17px 0;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    
+    &:nth-child(1n) {
+    background-color: $color-brand-primary;
+    font-weight: 700;    
+    }
+    &:nth-child(2n) {
+      background-color: #42a5f5;
+      font-weight: 500;
+    }
+    &:nth-child(3n) {
+    background-color: #546e7a;
+    font-weight: 700;
+    }
+}
+.fa-shopping-cart::before {
+    content:'\f07a';
+    margin-right: 8px;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: 400;
+    margin-right: 8px;
+}
+.fa-user-tie::before {
+    content: "\f508";
+    font-size: 3rem;
+    position: absolute;
+    left: 46px;
+    color: $color-background-default;
+}
+.sidebar-item__author-content {
+    display: block;
+    margin-left: 10px;
+    h3 {
+      font-size: 18px;
+      color: #263238;
+    }
+}
+.sidebar-item__author-profile {
+    display: flex;
+    padding-bottom: 24px;
+}
+.view-profile {
+    border: 1px solid #d3d3d3;
+    color: #707070;
+    font-size: 13px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.side-bar_product-info li {
+    color: #263238;
+    font-size: 0.9333rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+    span {
+        color: #70838d;
+        font-size: 0.9333rem;
+        font-weight: 400;
+    }
 }
 
 
