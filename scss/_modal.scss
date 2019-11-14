@@ -127,7 +127,16 @@
     .modal-body .modal-form input {
         width: 300px;
         height: 43px;
-       }
+    }
+    .modal-body .modal-form {
+        padding: 0 100px;
+    }    
+    .modal-footer {
+        padding: 11px 100px 23px 100px;
+    }
+    .modal-lost {
+        padding: 0 100px 111px 100px;
+    }
     .btn-create {
         font-size: 10px;
         padding: 5px 10px;
@@ -146,10 +155,19 @@
         max-width: 620px;
         max-height: 420px;
         }
+    .modal-body .modal-form {
+        padding: 0 130px;
+    }    
+    .modal-footer {
+        padding: 11px 130px 23px 130px;
+    }
+    .modal-lost {
+        padding: 0 130px 111px 130px;
+    }
     .modal-body .modal-form input {
          width: 350px;
          height: 43px;
-        }
+    }
     .btn-create {
         font-size: 12px;
         padding: 10px 20px;

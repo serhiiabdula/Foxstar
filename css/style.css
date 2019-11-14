@@ -9347,7 +9347,10 @@ h6 {
   padding-right: 26px;
   height: 100%; }
   .nav-right-notice i {
-    color: #a0a0a0; }
+    color: #a0a0a0;
+    position: absolute;
+    top: 6px;
+    left: 10px; }
 
 .fa-bell::before {
   content: "\f0f3"; }
@@ -9477,7 +9480,8 @@ h6 {
   height: 34px;
   width: 34px;
   border-radius: 100%;
-  border: none; }
+  border: none;
+  position: relative; }
 
 button {
   border: none;
@@ -10707,6 +10711,12 @@ footer a:hover {
   .modal-body .modal-form input {
     width: 300px;
     height: 43px; }
+  .modal-body .modal-form {
+    padding: 0 100px; }
+  .modal-footer {
+    padding: 11px 100px 23px 100px; }
+  .modal-lost {
+    padding: 0 100px 111px 100px; }
   .btn-create {
     font-size: 10px;
     padding: 5px 10px; }
@@ -10720,6 +10730,12 @@ footer a:hover {
   .modal-dialog {
     max-width: 620px;
     max-height: 420px; }
+  .modal-body .modal-form {
+    padding: 0 130px; }
+  .modal-footer {
+    padding: 11px 130px 23px 130px; }
+  .modal-lost {
+    padding: 0 130px 111px 130px; }
   .modal-body .modal-form input {
     width: 350px;
     height: 43px; }
