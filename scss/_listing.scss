@@ -11,10 +11,7 @@ h2{
 .col {
   @media(max-width: 576px){
     max-width: 100%;
-.col-lg-6
-    @media(max-width: 576px){
-      max-width: 50%;
-    }
+
   }
 }
 .listing {
@@ -22,17 +19,20 @@ h2{
   background-color: #f4f6f5;
   @media(max-width: 768px){
     padding: 90px 0;
+
+  }
+  @media(max-width: 567px){
+    padding: 70px 0;
   }
 }
 .button-group {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media(max-width: 576px){
+  @media(max-width: 576px) {
     display: grid;
-
   }
-  }
+}
 .bottom-button {
   padding-bottom: 0;
 }
@@ -274,15 +274,16 @@ h2{
           margin-top: 5px;
         }
         @media(max-width: 576px) {
+          background-size: 20px;
+        height: 20px;
+        width: 100px;
 
-          height: 20px;
-          width: 105px;
-          margin-right: 5px;
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        margin-right: 5px;
         }
 
-
         .on {
-
           height: 20px;
           background-image: url("../img/stars.png");
           background-position: 0 -20px;
@@ -294,10 +295,13 @@ h2{
             background-position: 0 -15px;
             background-size: 15px;
           }
-          @media(max-width: 576px) {
-            height: 20px;
-            background-position: 0 -20px;
-          }
+            @media(max-width: 576px) {
+              height: 18px;
+              background-position: 0 -20px;
+              background-size: 20px;
+
+            }
+
         }
 
         .live {
@@ -332,8 +336,12 @@ h2{
             @media(max-width: 576px) {
               width: 21px;
               height: 20px;
+              background-repeat: no-repeat;
               background-position: 0 -20px;
+              background-size: 18px;
             }
+
+
 
             &:hover {
               ~ span {
