@@ -9347,10 +9347,7 @@ h6 {
   padding-right: 26px;
   height: 100%; }
   .nav-right-notice i {
-    color: #a0a0a0;
-    position: absolute;
-    top: 6px;
-    left: 10px; }
+    color: #a0a0a0; }
 
 .fa-bell::before {
   content: "\f0f3"; }
@@ -9482,6 +9479,10 @@ h6 {
   border-radius: 100%;
   border: none;
   position: relative; }
+  .btn-icon i {
+    position: absolute;
+    top: 6px;
+    left: 8px; }
 
 button {
   border: none;

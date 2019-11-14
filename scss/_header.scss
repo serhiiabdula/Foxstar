@@ -31,9 +31,6 @@
     height: 100%;
     i {
         color: #a0a0a0;
-        position: absolute;
-        top: 6px;
-        left: 10px;
     }
 }
 .fa-bell::before {content: "\f0f3";}
@@ -153,6 +150,11 @@
     border-radius: 100%;
     border: none;
     position: relative;
+    i {
+        position: absolute;
+        top: 6px;
+        left: 8px;
+    }
 }
 button {
     border: none;
