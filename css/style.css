@@ -9532,26 +9532,18 @@ button {
     font-size: 5px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .container {
-    max-width: 540px; }
   span, a {
     font-size: 5px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .container {
-    max-width: 720px; }
   span, a {
     font-size: 10px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .container {
-    max-width: 960px; }
   span, a {
     font-size: 12px; } }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1170px; }
   span, a {
     font-size: 15px; } }
 
