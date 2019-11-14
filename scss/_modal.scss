@@ -95,3 +95,111 @@
 .fa-user:before {content: "\f007";}
 .fa-lock:before {content: "\f023";}
 .fa-edit:before {content: "\f044";}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .modal-dialog {
+        max-width: 550px;
+        max-height: 400px;
+    }
+    .modal-form input {
+        width: 200px;
+        height: 43px;
+    }
+    .btn-create {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .btn-submit {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container {
+        max-width: $sm; 
+    }
+    .modal-dialog {
+        max-width: 500px;
+        max-height: 400px;
+        }
+    .modal-body .modal-form input {
+        width: 300px;
+        height: 43px;
+       }
+    .btn-create {
+        font-size: 10px;
+        padding: 5px 10px;
+        }
+    .btn-submit {
+        font-size: 10px;
+        padding: 5px 10px;
+        }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container {
+        max-width: $md;
+    }
+    .modal-dialog {
+        max-width: 620px;
+        max-height: 420px;
+        }
+    .modal-body .modal-form input {
+         width: 350px;
+         height: 43px;
+        }
+    .btn-create {
+        font-size: 12px;
+        padding: 10px 20px;
+        }
+    .btn-submit {
+        font-size: 12px;
+        padding: 10px 20px;
+        }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .container {
+        max-width: $lg;
+    }
+    .modal-dialog {
+        max-width: 729px;
+        max-height: 484px;
+    }
+    .modal-body .modal-form input {
+        width: 400px;
+        height: 43px;
+       }
+    .btn-create {
+        font-size: 18px;
+        padding: 10px 25px;
+        }
+    .btn-submit {
+        font-size: 14px;
+        padding: 10px 25px;
+        }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .container {
+        max-width: $xl;
+    }
+    .modal-dialog {
+        max-width: 729px;
+        max-height: 484px;
+    }
+    .modal-body .modal-form input {
+        width: 400px;
+        height: 43px;
+       }
+    .btn-create {
+        font-size: 18px;
+        padding: 10px 25px;
+        }
+    .btn-submit {
+        font-size: 14px;
+        padding: 10px 25px;
+        }
+}
