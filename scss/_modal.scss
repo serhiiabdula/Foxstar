@@ -7,6 +7,8 @@
         border: none;
         border-radius: 0;
         box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.4);
+        // max-width: 729px;
+        // max-height: 484px;
     }
 }
 .modal-header {
@@ -27,12 +29,14 @@
        padding: 0 0 23px 0;
     }
     .modal-form {
-        padding: 0 162px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding-bottom: 113px;
         input {
             background-color: #76ae36;
             color: #fff;
             border: none;
-            width: 400px;
+            width: 100%;
             height: 43px;
             padding-left: 40px;
         }
@@ -54,7 +58,9 @@
     display: flex;
     justify-content: flex-start;
     border-top: none;
-    padding: 11px 162px 23px 162px;
+    padding: 0;
+    padding-top: 11px;
+    padding-bottom: 26px;
 }
 .modal-footer > :not(:first-child) {
     margin-left: 0; 
@@ -84,7 +90,6 @@
     height: 50px;
 }
 .modal-lost {
-    padding: 0 162px 111px 162px;
     a {
         color: #fff;
         font-family: 'Roboto', sans-serif;
@@ -98,14 +103,6 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .modal-dialog {
-        max-width: 550px;
-        max-height: 400px;
-    }
-    .modal-form input {
-        width: 200px;
-        height: 43px;
-    }
     .btn-create {
         font-size: 10px;
         padding: 5px 10px;
@@ -117,26 +114,6 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .container {
-        max-width: $sm; 
-    }
-    .modal-dialog {
-        max-width: 500px;
-        max-height: 400px;
-        }
-    .modal-body .modal-form input {
-        width: 300px;
-        height: 43px;
-    }
-    .modal-body .modal-form {
-        padding: 0 100px;
-    }    
-    .modal-footer {
-        padding: 11px 100px 23px 100px;
-    }
-    .modal-lost {
-        padding: 0 100px 111px 100px;
-    }
     .btn-create {
         font-size: 10px;
         padding: 5px 10px;
@@ -148,26 +125,6 @@
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    .container {
-        max-width: $md;
-    }
-    .modal-dialog {
-        max-width: 620px;
-        max-height: 420px;
-        }
-    .modal-body .modal-form {
-        padding: 0 130px;
-    }    
-    .modal-footer {
-        padding: 11px 130px 23px 130px;
-    }
-    .modal-lost {
-        padding: 0 130px 111px 130px;
-    }
-    .modal-body .modal-form input {
-         width: 350px;
-         height: 43px;
-    }
     .btn-create {
         font-size: 12px;
         padding: 10px 20px;
@@ -179,17 +136,13 @@
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    .container {
-        max-width: $lg;
-    }
+    
     .modal-dialog {
-        max-width: 729px;
-        max-height: 484px;
+        min-width: 80%;
     }
-    .modal-body .modal-form input {
-        width: 400px;
-        height: 43px;
-       }
+    .modal-form {
+        min-width: 80%;
+    }
     .btn-create {
         font-size: 18px;
         padding: 10px 25px;
@@ -201,17 +154,6 @@
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-    .container {
-        max-width: $xl;
-    }
-    .modal-dialog {
-        max-width: 729px;
-        max-height: 484px;
-    }
-    .modal-body .modal-form input {
-        width: 400px;
-        height: 43px;
-       }
     .btn-create {
         font-size: 18px;
         padding: 10px 25px;
@@ -220,4 +162,12 @@
         font-size: 14px;
         padding: 10px 25px;
         }
+}
+@media(max-width: 1200px) {
+    .modal-dialog {
+        min-width: 80%;
+    }
+    .modal-form {
+        min-width: 80%;
+    }
 }
