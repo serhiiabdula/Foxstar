@@ -1,30 +1,34 @@
-.section-builder{
+.section-builder {
   background-color: #f4f6f5;
   @media(max-width: 768px) {
     padding: 90px 0;
     .categories-title {
       @media(max-width: 768px) {
-      font-size: 16px;
+        font-size: 16px;
+      }
     }
   }
-
 }
+
 .row-builder {
   display: flex;
 }
+
 .img-bg {
   background-color: #ffffff;
   border: 2px #dedede solid;
 }
+
 .img-builder {
 
   width: 100%;
   border: 20px solid #ffffff;
-  @media(max-width: 768px){
+  @media(max-width: 768px) {
     border: 15px solid #ffffff;
 
   }
 }
+
 .builder-title {
   letter-spacing: 2px;
   padding: 5px 0;
@@ -35,11 +39,13 @@
 .builder-descript {
   color: #707070
 }
+
 .builder-buttons {
   display: flex;
   margin: 50px 0;
   justify-content: space-between;
 }
+
 .btn-group-rgb {
   button {
     margin-right: 20px;
@@ -47,7 +53,7 @@
     color: #ffffff;
     font-size: 16px;
     font-family: Roboto;
-    @media(max-width: 992px){
+    @media(max-width: 992px) {
       margin-right: 6px;
       padding: 15px 18px;
       font-size: 16px;
@@ -77,6 +83,7 @@
     background-color: $color-brand-primary;
   }
 }
+
 .social-buttons {
   display: flex;
   @media(max-width: 768px) {
@@ -87,10 +94,11 @@
   li {
     padding-left: 3px;
 
-    a{
+    a {
       height: 50px;
       width: 54px;
       display: block;
+
       &:hover {
         box-shadow: 0px 1px 5px 0px rgba(111, 111, 111, 1);
       }
@@ -98,29 +106,28 @@
   }
 }
 
-  .fb {
-    background: url(../img/social-fb.png) no-repeat;
-  }
+.fb {
+  background: url(../img/social-fb.png) no-repeat;
+}
 
-  .twitter {
-    background: url(../img/social-twitter.png) no-repeat;
+.twitter {
+  background: url(../img/social-twitter.png) no-repeat;
 
-  }
-  .linkedin {
-    background: url(../img/social-linkidin.png) no-repeat;
-  }
-    .pinterest {
-      background: url(../img/social-pinterest.png) no-repeat;
-    }
+}
 
+.linkedin {
+  background: url(../img/social-linkidin.png) no-repeat;
+}
 
+.pinterest {
+  background: url(../img/social-pinterest.png) no-repeat;
+}
 
+.sec-cerv {
+  display: flex;
+  width: 100%;
+}
 
-
-    .sec-cerv {
-      display: flex;
-      width: 100%;
-    }
 .nav-pills {
   .nav-link {
     background: $color-background-default;
@@ -136,7 +143,7 @@
   }
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #ffffff;
   border-bottom: 4px #8bc34a solid;
   color: #70838d;
@@ -152,6 +159,7 @@
   background-color: $color-background-default;
   border: 1px #dedede solid;
   padding: 35px;
+
   p {
     color: #70838d;
     font-size: 16px;
@@ -169,6 +177,7 @@
     }
   }
 }
+
 .tabs {
   padding-top: 55px;
 }

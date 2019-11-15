@@ -11459,6 +11459,9 @@ footer a:hover {
   @media (max-width: 768px) {
     .section-builder {
       padding: 90px 0; } }
+  @media (max-width: 768px) and (max-width: 768px) {
+    .section-builder .categories-title {
+      font-size: 16px; } }
 
 .row-builder {
   display: -webkit-box;
