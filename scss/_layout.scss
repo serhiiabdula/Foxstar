@@ -45,6 +45,26 @@ $xl: 1170px;
     .upload_search {
         margin-right: 42.6px;
     }
+    .wrapper-inner-container {
+        padding: 75px 30px 75px 30px;
+    }
+    .text-inner-container {
+        width: 100%;        
+        text-align: center;
+    }
+    .button-inner-container {
+        width: 100%;
+        text-align: center;
+    }
+    .inner-container {
+        padding: 71px 30px 82px 30px;
+    }
+    .section {
+        padding: 80px 0;
+    }
+    .carousel-indicators {
+        transform: translateY(35px);
+    }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -106,6 +126,21 @@ $xl: 1170px;
     .card-text p {
         padding-bottom: 30px;
     }
+    .wrapper-inner-container {
+        padding: 75px 30px 75px 30px;
+    }
+    .text-inner-container {
+        width: 100%;        
+        text-align: center;
+    }
+    .button-inner-container {
+        width: 100%;
+        text-align: center;
+    }
+    .section {
+        background-color: #fff;
+        padding: 80px 0;
+    }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -160,6 +195,17 @@ $xl: 1170px;
     .col-md-12 {
         flex: 0 0 100%;
         max-width: 100%; 
+    }
+    .wrapper-inner-container {
+        padding: 75px 30px 75px 30px;
+    }
+    .text-inner-container {
+        width: 100%;
+        text-align: center;
+    }
+    .button-inner-container {
+        width: 100%;
+        text-align: center;
     }
 }
 // Large devices (desktops, 992px and up)

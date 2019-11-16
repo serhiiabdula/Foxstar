@@ -1,14 +1,13 @@
 .section-builder {
   background-color: #f4f6f5;
-  @media(max-width: 768px) {
-    padding: 90px 0;
+
     .categories-title {
       @media(max-width: 768px) {
         font-size: 16px;
       }
     }
   }
-}
+
 
 .row-builder {
   display: flex;
@@ -86,13 +85,45 @@
 
 .social-buttons {
   display: flex;
-  @media(max-width: 768px) {
-    width: 50%;
-    height: 50%;
+  @media(max-width: 576px) {
+    display: block;
   }
+
 
   li {
     padding-left: 3px;
+
+    .fb {
+      background: url(../img/social-fb.png) no-repeat;
+      @media(max-width: 576px) {
+        background-size: 80%;
+
+      }
+
+    }
+
+    .twitter {
+      background: url(../img/social-twitter.png) no-repeat;
+      @media(max-width: 576px) {
+        background-size: 80%;
+      }
+
+    }
+
+    .linkedin {
+      background: url(../img/social-linkidin.png) no-repeat;
+      @media(max-width: 576px) {
+        background-size: 80%;
+      }
+    }
+
+    .pinterest {
+      background: url(../img/social-pinterest.png) no-repeat;
+      @media(max-width: 576px) {
+        background-size: 80%;
+      }
+    }
+
 
     a {
       height: 50px;
@@ -106,22 +137,7 @@
   }
 }
 
-.fb {
-  background: url(../img/social-fb.png) no-repeat;
-}
 
-.twitter {
-  background: url(../img/social-twitter.png) no-repeat;
-
-}
-
-.linkedin {
-  background: url(../img/social-linkidin.png) no-repeat;
-}
-
-.pinterest {
-  background: url(../img/social-pinterest.png) no-repeat;
-}
 
 .sec-cerv {
   display: flex;
@@ -136,10 +152,13 @@
     font-size: 16px;
     color: #70838d;
     padding: 23px 68.5px;
-    @media(max-width: 768px) {
+    @media(max-width: 992px) {
+      padding: 20px 48.7px;
+    }
+      @media(max-width: 768px) {
       padding: 15px 30.7px;
       font-size: 14px;
-    }
+      }
   }
 }
 
@@ -148,6 +167,9 @@
   border-bottom: 4px #8bc34a solid;
   color: #70838d;
   padding-bottom: 20px;
+  @media(max-width: 992px) {
+    padding-bottom: 17px;
+  }
   @media(max-width: 768px) {
     padding-bottom: 12px;
 
@@ -181,6 +203,4 @@
 .tabs {
   padding-top: 55px;
 }
-
-
 

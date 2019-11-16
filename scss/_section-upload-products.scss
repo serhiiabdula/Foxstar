@@ -1,4 +1,4 @@
-.section-upload-products {
+.section.section-upload-products {
     background-color: $color-background-secondary;
     padding: 0 0 107px 0;
     h4 {
@@ -28,11 +28,15 @@
         color: $color-btn_font-secondary;
     }
 }
+.form-border {
+    border: 1px solid $color-form-border;
+    width: 100%;
+}
 .form-upload-wrapper {
     padding: 45px 45px 20px 50px;
-    border-left: 1px solid $color-form-border;
-    border-bottom: 1px solid $color-form-border;
-    border-right: 1px solid $color-form-border;
+    // border-left: 1px solid $color-form-border;
+    // border-right: 1px solid $color-form-border;
+    border-bottom: 1px solid $color-form-border;    
     background-color: $color-background-default;
     width: 100%;
 }
