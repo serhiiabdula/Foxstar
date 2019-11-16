@@ -7,9 +7,13 @@
 .row-sm {
   margin-left: 0;
   margin-right: -15px;
-  @media(max-width: 1200px){
+  @media(max-width: 1200px) {
     margin-left: 0;
     margin-right: -10px;
+  }
+    @media(max-width: 576px){
+      margin-top: 30px;
+
 
   }
 
@@ -48,7 +52,13 @@
         padding: 10px 5px;
       }
     }
+    .data{
+      @media(max-width: 576px) {
+        display: flex;
+        justify-content: start;
+      }
 
+    }
     .bottompart {
       padding: 16px 23px;
       @media(max-width: 1200px) {
@@ -66,6 +76,7 @@
       @media(max-width: 576px) {
         display: flex;
         padding: 20px 30px;
+        justify-content: start;
       }
     }
 
@@ -95,7 +106,8 @@
     .price {
       font-size: 16px;
       line-height: 1rem;
-      @media (max-width: 768px) {
+      @media (max-width: 576px) {
+        padding-left: 142px;
       }
     }
   }
@@ -370,6 +382,11 @@
   border: 2px #dedede solid;
   @media(max-width: 1200px) {
     padding: 0 10px 10px 10px;
+    .rating {
+      @media(max-width: 576px){
+        padding-left: 116px;
+      }
+    }
   }
 .card-mini {
   @media(max-width: 576px){
@@ -468,7 +485,9 @@
    }
    .button-group-all {
      margin: 60px 15px 60px;
-
+     @media(max-width:576px){
+       transform: translate(114px, 10px);
+     }
 
    }
    .btn-all-new {
@@ -485,6 +504,11 @@
     padding-left: 10px;
   }
 }
+.m50{
+  @media(max-width:576px){
+    margin: 0 50px;
 
+  }
+}
 
 

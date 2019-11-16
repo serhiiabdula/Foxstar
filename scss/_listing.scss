@@ -1,7 +1,4 @@
-// .section {
-//   padding-top: 140px;
-//   padding-bottom: 140px;
-// }
+
 
 h2{
   @media(max-width: 576px){
@@ -25,12 +22,18 @@ h2{
     padding: 70px 0;
   }
 }
+
+
 .button-group {
-  text-align: center;
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  justify-content: center;
+
   @media(max-width: 576px) {
-    display: grid;
+    flex-direction:column ;
+    margin: 0 30px
+
   }
 }
 .bottom-button {
@@ -46,6 +49,7 @@ h2{
   &.is-checked {
     background-color: $color-brand-secondary;
     color: #f4f6f5;
+
   }
   &:focus {
     box-shadow:none;
@@ -385,4 +389,8 @@ h2{
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+.owl-carousel.owl-loaded {
+  display: block;
+  margin-bottom: 60px;
 }

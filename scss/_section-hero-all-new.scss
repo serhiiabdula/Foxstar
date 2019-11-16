@@ -1,7 +1,7 @@
 .hero_all {
   padding: 60px 0 60px 0;
   background: url("../img/background-foxtar-second.jpg") no-repeat;
-  text-align: center;
+
 }
 .all_hero-descript {
   font-family: "Roboto";
@@ -22,39 +22,32 @@
   font-size: 14px;
   border: transparent;
   color: #90a4ae;
-  margin-right: 426px;
-  @media(max-width:1200px){
-    margin-right: 410px;
-  }
-  @media(max-width: 992px){
-    margin-right: 350px;
-  }
-  @media(max-width:768px){
-    margin-right: 330px;
-  }
-  @media(max-width:576px){
-    margin-right: 143px;
-  }
+
 }
 
 .all_hero-search {
   position: relative;
   background-color: #ffffff;
-  border-radius:5px;
+  border-radius: 5px;
   border: transparent;
-  display: inline-block;
+  transform: translate(220px, 10px);
   padding: 23px 23px;
-
-  box-shadow: 0px 1px 15px 0px rgba(111, 111, 111, 1);
+  box-shadow: 0px 1px 15px 0px rgba(137, 144, 81, 1);
+  width: 670px;
   @media(max-width:992px){
+    max-width: 80%;
+    transform: translate(175px, 10px);
     padding: 20px 23px;
   }
 
   @media(max-width:768px){
+    max-width: 60%;
+    transform: translate(153px, 10px);
     padding: 19px 23px;
   }
   @media(max-width:576px){
     padding: 15px 15px;
+    transform: translate(116px, 10px);
   }
 }
 .all_searchButton {
@@ -74,30 +67,30 @@
     right: 15px;
   }
 }
-.square {
-    border: none;
-    background: none;
-    margin-right: 5px;
-    padding: 0 5px;
-    &:hover {
-      color: $color-brand-primary;
-    }
-    &:focus {
-      color: $color-brand-primary;
-
-    }
-}
-.list {
-    border: none;
-    background: none;
-    padding: 0 5px;
-    &:hover {
-      color: $color-brand-primary;
-    }
-    &:focus {
-      color: $color-brand-primary;
-    }
-}
+//.square {
+//    border: none;
+//    background: none;
+//    margin-right: 5px;
+//    padding: 0 5px;
+//    &:hover {
+//      color: $color-brand-primary;
+//    }
+//    &:focus {
+//      color: $color-brand-primary;
+//
+//    }
+//}
+//.list {
+//    border: none;
+//    background: none;
+//    padding: 0 5px;
+//    &:hover {
+//      color: $color-brand-primary;
+//    }
+//    &:focus {
+//      color: $color-brand-primary;
+//    }
+//}
 // .card-list {
 //     display: flex;
 //     flex-direction: row;    
