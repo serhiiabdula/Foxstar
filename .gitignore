@@ -1,8 +1,4 @@
 .idea/
-../.idea
 node_modules/
-../.style.css
 css/
 package-lock.json
-../css/
-css/
