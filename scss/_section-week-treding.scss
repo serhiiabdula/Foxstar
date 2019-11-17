@@ -1,7 +1,20 @@
+.section-week-treding{
+  @media(max-width: 768px){
+    padding: 90px 0;
+  }
+
+}
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
   display: flex;
+
+  .col {
+    @media(max-width: 375px) {
+      max-width: 100%;
+    }
+  }
 }
 
 .carousel-inner .carousel-item-right.active,
@@ -19,6 +32,7 @@
   transform: translateX(0);
 
 }
+
 .card-label {
   &:before {
     content: "";
@@ -37,18 +51,17 @@
 
   }
 
-.carousel-control-prev-icon {
-  background-image: none;
-}
-.carousel-control-next-icon {
-  background-image: none;
-}
+
 .carousel-indicators{
   .active {
     background-color: $color-brand-primary;
   }
   transform: translateY(70px);
+  @media(max-width: 768px){
+    transform: translateY(40px);
+  }
   li {
+
     width: 15px;
     height: 15px;
     opacity: 1;
@@ -58,6 +71,10 @@
     border-bottom: none;
     background-color: #e8e8e8;
     border: 1px solid #acacac;
+    @media(max-width: 768px){
+      width: 10px;
+      height: 10px;
+    }
   }
 
 }

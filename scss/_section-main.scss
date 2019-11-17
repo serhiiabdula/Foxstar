@@ -1,12 +1,85 @@
 .section-main {
   background-color: #f4f6f5;
+  @media(max-width: 768px) {
+    padding: 90px 0;
+  }
+}
+.row-sm {
+  margin-left: 0;
+  margin-right: -15px;
+  @media(max-width: 1200px) {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+    @media(max-width: 576px){
+      margin-top: 30px;
+
+
+  }
+
+
 }
 .row_main {
   display: flex;
+  @media (max-width: 576px) {
+    display: block;
+
+  }
 }
-
-
+.col {
+  @media (max-width: 576px) {
+    width: 100%
+  }
+}
   .card-mini {
+    .card-descript {
+      font-size: 14px;
+      color: #8bc34a;
+      @media (max-width: 768px) {
+        padding-top: 15px;
+      }
+    }
+
+    .card-inf {
+      padding: 23px 26px;
+      @media(max-width: 1200px) {
+        padding: 20px 10px;
+      }
+      @media(max-width: 992px) {
+        padding: 20px 10px;
+      }
+      @media(max-width: 768px) {
+        padding: 10px 5px;
+      }
+    }
+    .data{
+      @media(max-width: 576px) {
+        display: flex;
+        justify-content: start;
+      }
+
+    }
+    .bottompart {
+      padding: 16px 23px;
+      @media(max-width: 1200px) {
+        padding: 20px 10px;
+        display: flex;
+      }
+      @media(max-width: 992px) {
+        padding: 10px;
+        display: block;
+      }
+      @media (max-width: 768px) {
+        padding: 5px;
+
+      }
+      @media(max-width: 576px) {
+        display: flex;
+        padding: 20px 30px;
+        justify-content: start;
+      }
+    }
+
     .author {
       .author-descript {
         font-size: 12px;
@@ -14,38 +87,31 @@
         padding-left: 5px;
       }
     }
-.rating {
-  .rating-discrip {
-    font-size: 12px;
-    line-height: 2.5;
-    padding-left: 5px;
-  }
-}
-    .card-inf {
-      padding: 23px 26px;
+
+    .rating {
+      .rating-discrip {
+        font-size: 12px;
+        line-height: 2.5;
+        padding-left: 5px;
+      }
     }
+
 
     .card-title {
       font-size: 16px;
       line-height: 1rem;
+
     }
 
     .price {
       font-size: 16px;
       line-height: 1rem;
-    }
-
-    .card-descript {
-      font-size: 14px;
-      color: #8bc34a;
-    }
-
-
-
-    .bottompart {
-      padding: 16px 23px;
+      @media (max-width: 576px) {
+        padding-left: 142px;
+      }
     }
   }
+
 
 
 .col-mini {
@@ -54,18 +120,43 @@
 .categories-title {
 
   color: #000000;
+  @media(max-width: 992px) {
+    line-height: 3rem;
+    font-size: 18px;
+  }
+  @media(max-width: 768px) {
+    font-size: 17px;
+  }
+  @media(max-width: 576px) {
+    font-size: 18px;
+  }
 }
+
 
 .card-categories {
   margin-bottom: 30px;
   padding: 0 30px 40px 30px;
   background-color: #ffffff;
   border: 2px #dedede solid;
+  @media(max-width: 1200px){
+    padding: 0 15px 15px 15px;
+  }
+  @media(max-width: 992px){
+    padding: 0 10px 10px 10px;
+  }
+  @media(max-width: 576px) {
+    padding: 0 30px 40px 30px;
+  }
+
 
 
   .main-categories{
     border-top: 2px #dedede solid;
     padding-top: 30px;
+    @media(max-width: 992px){
+      padding-top: 10px;
+    }
+
 
     li {
       display: flex;
@@ -77,10 +168,30 @@
         color: #8bc34a;
         font-weight: 900;
         padding-right: 10px;
+          @media(max-width: 992px){
+            font-size: 13px;
+          }
+          @media(max-width: 576px) {
+            font-size: 16px;
+          }
+      }
+      .name-category{
+        @media(max-width: 992px) {
+          font-size: 13px;
+        }
+        @media(max-width: 576px)  {
+          font-size: 18px;
+        }
       }
       .price-category {
         color:#506e7a;
 
+        @media(max-width: 992px){
+          font-size: 12px;
+        }
+        @media(max-width: 576px){
+          font-size: 16px;
+        }
 
       }
 
@@ -94,6 +205,18 @@
   padding:0 30px 30px 30px;
   margin-bottom: 30px;
   border: 2px #dedede solid;
+  @media(max-width: 1200px){
+    padding:0 15px 15px 15px;
+  }
+  @media(max-width: 992px){
+    padding:0 10px 10px 10px;
+  }
+  @media(max-width: 768px){
+    padding:0 10px 10px 10px;
+  }
+  @media(max-width: 567px){
+    padding:0 30px 30px 30px;
+  }
 
 
 }
@@ -196,6 +319,24 @@
   padding: 15px 60px 15px 80px;
   margin-top: 30px;
   width: 100%;
+  @media(max-width: 1200px){
+  padding: 15px 60px 15px 69px;
+  margin-top: 10px;
+}
+  @media(max-width: 992px){
+    padding: 15px 60px 15px 69px;
+    margin-top: 10px;
+  }
+  @media(max-width: 768px){
+    padding: 10px 60px 10px 46px;
+    margin-top: 10px;
+  }
+  @media (max-width: 576px){
+    padding: 10px 60px 10px 88px;
+    margin-top: 30px;
+    width: 50%;
+    transform: translate(110px, -10px);
+  }
 
 
   &:before {
@@ -206,7 +347,24 @@
     height: 18px;
     left: 50px;
     top: 20px;
+    @media(max-width: 1200px){
+      left: 44px;
+    }
+    @media(max-width: 992px){
+      left: 44px;
+    }
+    @media(max-width: 768px){
+      left: 23px;
+      top: 15px;
+    }
+
+
+    @media (max-width:576px){
+      left: 67px;
+      top: 16px;
+    }
   }
+
 
 
   }
@@ -222,17 +380,32 @@
   background-color: #ffffff;
   padding: 0 30px 30px 30px;
   border: 2px #dedede solid;
+  @media(max-width: 1200px) {
+    padding: 0 10px 10px 10px;
+    .rating {
+      @media(max-width: 576px){
+        padding-left: 116px;
+      }
+    }
+  }
+.card-mini {
+  @media(max-width: 576px){
+    display: flex;
 
+  }
+}
   .card {
     border: none;
 
-    &:hover{
+    &:hover {
       box-shadow: none;
     }
-    .card-inf{
+
+    .card-inf {
       padding: 20px 0;
 
     }
+
     .bottompart {
       border-top: none;
       padding: 0;
@@ -244,9 +417,9 @@
 
   }
 
-
-
 }
+
+
 .stars-mini {
   position: relative;
   display: block;
@@ -262,7 +435,7 @@
 
   .on {
     width: 88%;
-    height: 10px;
+    height: 8px;
     background-image: url("../img/stars.png");
     background-position: 0 -10px;
     background-size: 10px;
@@ -305,20 +478,37 @@
      width: 100%;
      background-color:#8bc34a;
      color:#ffffff;
+     @media(max-width:576px){
+       width: 60%;
+       transform: translate(93px, -10px);
+     }
    }
    .button-group-all {
-     margin-top: 60px;
-     margin-bottom: 60px;
+     margin: 60px 15px 60px;
+     @media(max-width:576px){
+       transform: translate(114px, 10px);
+     }
 
    }
    .btn-all-new {
      margin-right: 3px;
      padding: 7px 18px;
-     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);;
+     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
    }
    .card-top {
       border-bottom: 2px #dedede solid;
    }
+.col-plr{
+  @media (max-width: 768px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.m50{
+  @media(max-width:576px){
+    margin: 0 50px;
 
+  }
+}
 
 

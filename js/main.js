@@ -38,48 +38,6 @@ $('.button-group').each( function( i, buttonGroup ) {
 * isotope init end
 */
 
-var html = '<ol class="carousel-indicators">';
-for (var i = 0; i < $('#recipeCarousel .carousel-item').length; i++) {
-    if(i===0){
-        html += '<li class="item' + i + ' active" data-number="' + i + '"></li>';
-    }else{
-        html += '<li class="item' + i + '" data-number="' + i + '"></li>';
-    }
-}
-html += '</ol>';
-$("#recipeCarousel").append(html);
-
-if($('#recipeCarousel').length){
-    $('#recipeCarousel').carousel({
-        interval: 10000
-    })
-}
-
-
-$('.carousel .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    for (var i=0;i<2;i++) {
-        next=next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-
-        next.children(':first-child').clone().appendTo($(this));
-    }
-});
-
-
-
-
-$("#recipeCarousel .carousel-indicators li").on('click', function(){
-    $("#recipeCarousel").carousel($(this).data('number'));
-});
-
 if ($(".js-range-slider").length){
     $(".js-range-slider").ionRangeSlider();
 }

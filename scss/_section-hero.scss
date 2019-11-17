@@ -1,7 +1,10 @@
 .hero {
   padding: 150px 0 160px 0;
   background: url("../img/background-foxtar.jpg") no-repeat;
-  text-align: center;
+
+  @media(max-width:768px){
+    padding: 120px 0;
+  }
 
 
 
@@ -12,6 +15,12 @@
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+    @media(max-width: 768px) {
+      font-size: 40px;
+    }
+    @media(max-width: 576px) {
+      font-size: 26px;
+    }
   }
 
   .hero-descript {
@@ -21,6 +30,13 @@
     text-align: center;
     color: #ffffff;
     padding: 44px 0;
+    @media(max-width:768px){
+      font-size: 18px;
+
+    }
+    @media(max-width:576px){
+      font-size: 16px;
+    }
   }
 
   .search {
@@ -28,7 +44,8 @@
     font-size: 14px;
     border: transparent;
     color: #90a4ae;
-    margin-right: 426px;
+
+
   }
 
   .searchButton {
@@ -39,6 +56,14 @@
     height: 25px;
     top: 20px;
     right: 25px;
+    @media(max-width:768px){
+      top: 18px;
+      right: 19px;
+    }
+    @media(max-width:576px){
+      top: 13px;
+      right: 15px;
+    }
 
 
   }
@@ -48,19 +73,25 @@
     background-color: #ffffff;
     border-radius: 5px;
     border: transparent;
-    display: inline-block;
+    transform: translate(428px, 10px);
     padding: 23px 23px;
-
     box-shadow: 0px 1px 15px 0px rgba(137, 144, 81, 1);
+    width: 670px;
+    @media(max-width:992px){
+      max-width: 80%;
+      transform: translate(220px, 10px);
+      padding: 20px 23px;
+    }
+
+    @media(max-width:768px){
+      max-width: 60%;
+      transform: translate(153px, 10px);
+     padding: 19px 23px;
+    }
+    @media(max-width:576px){
+      padding: 15px 15px;
+      transform: translate(116px, 10px);
+    }
   }
 
-}
-.card-mini {
-  img-mini {
-width: 100%;
-
-  }
-}
-.col-mr {
-  margin-right: 15px;
 }
