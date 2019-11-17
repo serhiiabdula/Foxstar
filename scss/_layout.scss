@@ -64,6 +64,15 @@ $xl: 1170px;
     .carousel-indicators {
         transform: translateY(35px);
     }
+    .title-footer:before {
+        top: 0px;
+    }
+    .sidebar-item {
+        margin-top: 30px;
+    }
+    .inner-container {
+        padding: 40px 20px 40px 20px;
+    }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -140,6 +149,12 @@ $xl: 1170px;
         background-color: #fff;
         padding: 80px 0;
     }
+    .sidebar-item {
+        margin-top: 30px;
+    }
+    .section-inverse {
+        background-color: #263238;
+    }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
@@ -206,6 +221,12 @@ $xl: 1170px;
         width: 100%;
         text-align: center;
     }
+    .sidebar-item {
+        margin-top: 30px;
+    }
+    .text-inner-container span {
+        font-weight: 700;
+    }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -242,6 +263,12 @@ $xl: 1170px;
     .col-lg-12 {
         flex: 0 0 100%;
         max-width: 100%; 
+    }
+    .sidebar-item-inner {
+        padding: 20px 15px 25px 15px;
+    }
+    .wrapper-inner-container {
+        padding: 115px 150px 107px 150px;
     }
 }
 // Extra large devices (large desktops, 1200px and up)
