@@ -1,5 +1,5 @@
 .header-top {
-    height: 82px;
+    height: 91px;
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
@@ -13,6 +13,9 @@
             }
     }
 }
+.container-margin {
+    margin: 0 -15px;
+}
 .nav-right-call {
     padding-right: 28px;
     span {
@@ -24,6 +27,7 @@
 }
 .dropdown {
     padding-right: 15px;
+    outline: none;
 }
 .nav-right-notice {
     display: flex;
@@ -37,20 +41,29 @@
 .fa-shopping-cart::before {content: "\f07a";}
 .fa-envelope::before {content: "\f0e0";}
 .fa-reply::before {content: "\f3e5";}
+.btn-icon {
+.fa-shopping-cart::before {
+    margin-right: 0;
+}
+}
 .dropdown-menu {
     width: 268px;
     padding: 0;
     margin: 0;
+    border: none;
     & a {
         padding: 0;
     }
 } 
 .card-notice {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
     border: 1px solid #e0e0e0;
     border-bottom: none;
+}
+.card-flex {
+    justify-content: space-between;
 }
 .card-massage-img  {
     padding: 20px;
@@ -87,7 +100,7 @@
     }
 }
 .card-shop-img  {
-    padding: 23px;
+    padding: 19px 16px 23px 23px;
      img {
         width: 100%;
         height: 100%;
@@ -135,10 +148,18 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
+    height: 35px;
+    }
+    .btn-success {
+        width: 105px;
+    }
+    .btn-danger {
+        width: 135px;
     }
 }
 .dropdown-toggle {
     height: 100%;
+    padding-right: 15px;
 }
 .dropdown-toggle::after {
     display: none;
@@ -150,10 +171,29 @@
     border-radius: 100%;
     border: none;
     position: relative;
+    span {
+        color: #fff;
+        background-color: $color-brand-secondary;
+        border-radius: 10px;
+        font-size: 11px;
+        font-family: 'OpenSans', sans-serif;
+        font-weight: 600;
+        height: 18px;
+        width: 18px; 
+        position: absolute;
+        top: -8px;
+        left: 20px;
+    }
+    .massage-icon {
+        background-color: #ef6c00;
+    }
+    .bell-icon {
+        background-color: #fcb322;
+    }
     i {
         position: absolute;
-        top: 6px;
-        left: 8px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 button {
@@ -191,10 +231,11 @@ button {
         padding: 0;
         margin: 0 0 0 -17px;
         li{
-            padding: 25px 17px;
+            padding: 19px 17px;
             a{
             text-decoration: none;
             color: #fff;
+            font-size: 14px;
             }
         }
     }
@@ -210,6 +251,9 @@ button {
 }
 .navbar {
     background-color: transparent !important;
+}
+.navbar-padding {
+    padding: 10px 0;
 }
 .nav-link {
     padding: 0;
@@ -227,32 +271,33 @@ button {
     background-color: $color-brand-primary;
     border-color: $color-brand-secondary;
 }
-
-// container sizes:
-$sm: 540px;
-$md: 720px;
-$lg: 960px;
-$xl: 1170px;
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .header {
     .nav-right-call {
         display: none;
     }
+}
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    .header {
     .nav-right-call {
         display: none;
     }
 }
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    .header {
     span, a {
         font-size: 10px;
     }
 }
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .header {
     span, a {
         font-size: 12px;
     }
@@ -260,12 +305,12 @@ $xl: 1170px;
         padding: 0;
     }
 }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-    span, a {
-        font-size: 15px;
-    }
+    .header {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding: 0;
     }
+}
 }
